@@ -19,58 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4573a005-deb7-4a5b-ae3d-0868b9117c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vimalselvam_testng_extentsreport_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/Chapter6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/src/main/java/com/test/extend/demo/ExtentTestNGReporterListenerOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/src/main/java/com/test/extend/demo/TestAssertionsAndLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/src/main/resources/testngtestreport.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/test-output/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/test-output/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter6/test-output/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/moco-runner-0.11.0-standalone.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startup1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startupWithCookies.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startupget.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startuppost.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/基本操作说明" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutoTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="4573a005-deb7-4a5b-ae3d-0868b9117c3c" name="Default Changelist" comment="截止到7-7学习生成代码">
+      <change afterPath="$PROJECT_DIR$/Chapter7/startupWithHeader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter7/startupWithRedirect.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/Chapter5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/Chapter5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/GroupOnClass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/GroupOnClass.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/paramter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/paramter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/GroupOnClass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/GroupOnClass.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/META-INF/Chapter5.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/MultiThreadOnXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/MultiThreadOnXml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/com/course/testng/timeout/TimeOutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/com/course/testng/timeout/TimeOutTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/paramter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/paramter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +148,16 @@
       <workItem from="1604810127641" duration="12797000" />
       <workItem from="1604828691113" duration="1458000" />
       <workItem from="1604830344458" duration="7014000" />
-      <workItem from="1604925977055" duration="4927000" />
+      <workItem from="1604925977055" duration="8355000" />
     </task>
+    <task id="LOCAL-00001" summary="截止到7-7学习生成代码">
+      <created>1604931283440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931283441</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +177,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="截止到7-7学习生成代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="截止到7-7学习生成代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604927592329">
@@ -263,6 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604927884827" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604931304944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604931304944" />
     <state x="233" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604811480256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -275,5 +241,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604810249240" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604932328875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604932328875" />
   </component>
 </project>
