@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suiteName">
     <test name="param">
+        <!--以下是自己根据dtd改写的-->
         <classes>
+            <class name="com.course.testng.paramter.Paramter">
+                <methods>
+                    <parameter name="name" value="zhangsan"></parameter>
+                    <parameter name="age" value="18"></parameter>
+                </methods>
+            </class>
+        </classes>
+
+        <!--以下是学习视频原版,但在加了dtd之后会报错-->
+       <!-- <classes>
             <parameter name="name" value="zhangsan"/>
             <parameter name="age" value="18"/>
             <class name="com.course.testng.paramter.Paramter"/>
-        </classes>
+        </classes>-->
     </test>
 </suite>

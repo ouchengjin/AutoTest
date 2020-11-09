@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suitename">
+    <test name="report">
+        <classes>
+            <class name="com.test.extend.demo.TestAssertionsAndLogs">
+                <methods>
+                    <include name="testAssertion"/>
+                    <include name="testAssertion2"/>
+                    <include name="testAssertion3"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <listeners>
+       <!-- <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>-->
+        <listener class-name="com.test.extend.demo.ExtentTestNGReporterListenerOld"></listener>
+    </listeners>
+</suite>

@@ -1,0 +1,32 @@
+[
+  {
+    "description": "post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "post请求的回复",
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带参数的post请求",
+    "request": {
+      "uri": "/postwithparamters",
+      "method": "post",
+      "forms": {
+        "name": "lisi",
+        "age": "17"
+      }
+    },
+    "response": {
+      "text": "我红太狼又拿起了平底锅",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]
