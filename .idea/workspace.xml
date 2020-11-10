@@ -26,11 +26,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4573a005-deb7-4a5b-ae3d-0868b9117c3c" name="Default Changelist" comment="截止到第七章学习生成代码">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e959f4a5-d6e4-4ca5-93d5-4431482d3225" name="Default Changelist" comment="20201110代码提交">
+      <change afterPath="$PROJECT_DIR$/Chapter9/Chapter9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/demo/MyHttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/target/classes/com/course/httpclient/demo/MyHttpClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7/基本操作说明" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/基本操作说明" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7/startupWithCookies.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/startupWithCookies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jzbyVAGYUVYZ9m07Jn5a5MxrH4" />
@@ -71,7 +81,7 @@
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter6/src/main/resources/testngtestreport.xml">
+  <component name="RunManager" selected="TestNG.MyHttpClient.test1">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Chapter5" />
       <option name="VM_PARAMETERS" />
@@ -146,6 +156,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyHttpClient.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.demo.MyHttpClient" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAssertionsAndLogs" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Chapter6" />
       <extension name="coverage">
@@ -183,9 +211,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter6/src/main/resources/testngtestreport.xml" />
-        <item itemvalue="TestNG.TestAssertionsAndLogs" />
+        <item itemvalue="TestNG.MyHttpClient.test1" />
         <item itemvalue="TestNG.TestAssertionsAndLogs.logDemo" />
+        <item itemvalue="TestNG.TestAssertionsAndLogs" />
+        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter6/src/main/resources/testngtestreport.xml" />
         <item itemvalue="TestNG.BasicAnnotation" />
       </list>
     </recent_temporary>
@@ -212,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604931283441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="合并">
+      <created>1605008816605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605008816605</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +281,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="截止到7-7学习生成代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="截止到7-7学习生成代码" />
+    <MESSAGE value="合并" />
+    <MESSAGE value="20201110代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201110代码提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604927592329">
@@ -268,22 +306,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="116" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604811085021" />
-    <state width="1024" height="301" key="GridCell.Tab.0.bottom" timestamp="1604928592961">
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1605022536540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="301" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604928592961" />
-    <state width="1024" height="301" key="GridCell.Tab.0.center" timestamp="1604928592961">
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
+    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1605022536540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="301" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604928592961" />
-    <state width="1024" height="301" key="GridCell.Tab.0.left" timestamp="1604928592961">
+    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
+    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1605022536540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="301" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604928592961" />
-    <state width="1024" height="301" key="GridCell.Tab.0.right" timestamp="1604928592961">
+    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
+    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1605022536540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="301" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604928592961" />
+    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1604927632540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,10 +330,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604927884827" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604931304944">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605008838855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604931304944" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605008838855" />
     <state x="233" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604811480256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -308,10 +346,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="504" y="124" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1604935284566" />
-    <state x="178" y="73" key="new project wizard" timestamp="1604810249240">
+    <state x="178" y="73" key="new project wizard" timestamp="1605021001276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604810249240" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605021001276" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1604932328875">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
