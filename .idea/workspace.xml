@@ -27,15 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e959f4a5-d6e4-4ca5-93d5-4431482d3225" name="Default Changelist" comment="20201110代码提交">
-      <change afterPath="$PROJECT_DIR$/Chapter9/Chapter9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter9/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/demo/MyHttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter9/target/classes/com/course/httpclient/demo/MyHttpClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MycookiesForGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter7/startupWithCookies.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/startupWithCookies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,7 @@
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter7" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyHttpClient.test1">
+  <component name="RunManager" selected="TestNG.MycookiesForGet.testGetWithCookies">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Chapter5" />
       <option name="VM_PARAMETERS" />
@@ -129,33 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicAnnotation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.testng.basicannotation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.testng.basicannotation" />
-      <option name="MAIN_CLASS_NAME" value="com.course.testng.basicannotation.BasicAnnotation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter6/src/main/resources/testngtestreport.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter6" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter6/src/main/resources/testngtestreport.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyHttpClient.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Chapter9" />
       <extension name="coverage">
@@ -167,6 +135,42 @@
       <option name="PACKAGE_NAME" value="com.course.httpclient.demo" />
       <option name="MAIN_CLASS_NAME" value="com.course.httpclient.demo.MyHttpClient" />
       <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MycookiesForGet.testGetCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.cookies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.cookies" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.cookies.MycookiesForGet" />
+      <option name="METHOD_NAME" value="testGetCookies" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MycookiesForGet.testGetWithCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.cookies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.cookies" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.cookies.MycookiesForGet" />
+      <option name="METHOD_NAME" value="testGetWithCookies" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -211,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MycookiesForGet.testGetWithCookies" />
+        <item itemvalue="TestNG.MycookiesForGet.testGetCookies" />
         <item itemvalue="TestNG.MyHttpClient.test1" />
         <item itemvalue="TestNG.TestAssertionsAndLogs.logDemo" />
         <item itemvalue="TestNG.TestAssertionsAndLogs" />
-        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter6/src/main/resources/testngtestreport.xml" />
-        <item itemvalue="TestNG.BasicAnnotation" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +228,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4573a005-deb7-4a5b-ae3d-0868b9117c3c" name="Default Changelist" comment="" />
+      <changelist id="e959f4a5-d6e4-4ca5-93d5-4431482d3225" name="Default Changelist" comment="20201110代码提交" />
       <created>1604810121332</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -233,6 +237,7 @@
       <workItem from="1604828691113" duration="1458000" />
       <workItem from="1604830344458" duration="7014000" />
       <workItem from="1604925977055" duration="8355000" />
+      <workItem from="1605097427435" duration="7020000" />
     </task>
     <task id="LOCAL-00001" summary="截止到7-7学习生成代码">
       <created>1604931283440</created>
@@ -248,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605008816605</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20201110代码提交">
+      <created>1605023244708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605023244708</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,22 +318,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="116" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604811085021" />
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1605022536540">
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1605108404901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
-    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1605022536540">
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605108404901" />
+    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1605108404901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
-    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1605022536540">
+    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605108404901" />
+    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1605108404901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
-    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1605022536540">
+    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605108404901" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1605108404901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605022536540" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605108404901" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605105970454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605105970454" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605105970454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605105970454" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605105970454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605105970454" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605105970454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605105970454" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1604927632540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,18 +358,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604927884827" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605008838855">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605023259537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605008838855" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605023259537" />
     <state x="233" y="208" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604811480256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="233" y="208" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1604811480256" />
-    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604813132130">
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605103113785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604813132130" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605103113785" />
     <state x="504" y="124" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604935284566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -354,5 +382,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604932328875" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Chapter$MycookiesForGet_testGetCookies.ic" NAME="MycookiesForGet.testGetCookies Coverage Results" MODIFIED="1605105043721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.course.httpclient.cookies.*</FILTER>
+    </SUITE>
   </component>
 </project>
