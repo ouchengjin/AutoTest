@@ -37,7 +37,7 @@
   {
     "description": "这是带cookies带参数的post请求",
     "request": {
-      "uri": "/post/param/cookies",
+      "uri": "/post/with/cookiesandparam",
       "method": "post",
       "cookies": {
         "login": "true"
