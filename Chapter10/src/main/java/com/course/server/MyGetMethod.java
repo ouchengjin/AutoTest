@@ -12,10 +12,10 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
-@Api(value = "/",description = "这是我全部的get方法")
+@Api(value = "/",description = "这是欧成金全部的get方法")
 public class MyGetMethod {
     @RequestMapping(value = "/getCookies",method=RequestMethod.GET)
-    @ApiOperation(value = "通过这个方法可以获取到cookies",httpMethod="get")
+    @ApiOperation(value = "通过这个方法可以获取到cookies",httpMethod="GET")
     public String getCookies(HttpServletResponse response){
         //HttpServletRequest  装载请求信息的类
         //HttpServletResponse 装载响应信息的类
@@ -28,7 +28,7 @@ public class MyGetMethod {
      * 这是需要携带cookies才能访问的get请求
      */
     @RequestMapping(value = "get/withCookies",method = RequestMethod.GET)
-    @ApiOperation(value = "这是需要携带cookies才能访问的get请求",httpMethod = "get")
+    @ApiOperation(value = "这是需要携带cookies才能访问的get请求",httpMethod = "GET")
     public String getWithCookies(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
         if (Objects.isNull(cookies)){
@@ -49,7 +49,7 @@ public class MyGetMethod {
      * 我们来模拟获取商品列表
      */
     @RequestMapping(value = "/get/with/param",method = RequestMethod.GET)
-    @ApiOperation(value = "一个需要携带参数才能访问的get请求方法一",httpMethod = "get")
+    @ApiOperation(value = "一个需要携带参数才能访问的get请求方法一",httpMethod = "GET")
     public Map<String,Integer> getList(@RequestParam Integer start,
                                        @RequestParam Integer end){
         Map<String, Integer> myList = new HashMap<>();
@@ -66,7 +66,7 @@ public class MyGetMethod {
      *
      */
     @RequestMapping(value = "/get/with/param/{start}/{end}")
-    @ApiOperation(value = "需要携带参数访问的get请求方法一",httpMethod = "get")
+    @ApiOperation(value = "需要携带参数访问的get请求方法二",httpMethod = "GET")
     public Map<String,Integer> getList2(@PathVariable Integer start,
                                         @PathVariable Integer end){
         Map<String,Integer> goodsList = new HashMap<>();

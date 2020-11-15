@@ -25,9 +25,9 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("我的接口文档")
+        return new ApiInfoBuilder().title("欧成金的接口文档")
                 .contact(new Contact("ouchengjin","","953816929@qq.com"))
-                .description("这是我SwaggerUi生成的接口文档")
+                .description("这是欧成金SwaggerUi生成的接口文档")
                 .version("1.0.0.0")
                 .build();
     }
