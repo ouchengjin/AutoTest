@@ -1,0 +1,14 @@
+GET http://localhost:8888/getCookies
+
+<> 2020-11-14T010505.200.txt
+
+###
+
+GET http://localhost/getCookies
+
+###
+
+GET http://localhost/getCookies
+
+###
+
