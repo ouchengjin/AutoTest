@@ -1,13 +1,12 @@
 package com.course.server;
 
+import com.course.bean.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
@@ -32,6 +31,34 @@ public class MyPostMethod {
             return "恭喜你登陆成功";
         }
         return "用户名或密码错误";
+    }
+
+    @RequestMapping(value = "/getUserList",method = RequestMethod.POST)
+    @ApiOperation(value = "获取用户列表",httpMethod = "POST")
+    public String getUserList(HttpServletRequest request,
+                              @RequestBody User user){
+        //获取cookies
+        Cookie[] cookies = request.getCookies();
+        if (cookies == null) {
+            return "cookies 不能为空";
+        }
+        //验证cookies是否合法
+        for (Cookie cookie:
+             cookies) {
+            if (cookie.getName().equals("login")
+                    &&cookie.getValue().equals("true")
+                    &&user.getUserName().equals("zhangsan")
+                    &&user.getPassWord().equals("123456")) {
+                User user1 = new User();
+                user1.setName("lisi");
+                user1.setAge("18");
+                user1.setSex("man");
+                return user1.toString();
+            }
+
+        }
+        return "参数不合法";
+
     }
 
 
