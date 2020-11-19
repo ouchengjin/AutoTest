@@ -9,4 +9,24 @@
     <insert id="addUser" parameterType="com.course.model.User">
         insert into user values(default,#{name},#{age},#{sex})
     </insert>
+
+    <update id="updateUser" parameterType="com.course.model.User">
+        update user
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="age != null and age !=''">
+                age = #{age},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex},
+            </if>
+        </set>
+        where id= #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="Integer">
+        delete from user where id = #{id}
+    </delete>
 </mapper>

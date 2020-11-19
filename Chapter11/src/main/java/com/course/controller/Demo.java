@@ -7,10 +7,7 @@ import lombok.extern.log4j.Log4j;
 import lombok.extern.log4j.Log4j2;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @Log4j2
@@ -36,6 +33,22 @@ public class Demo {
     public int addUser(@RequestBody User user){
         int ret =0;
         ret = template.insert("addUser",user);
+        return ret;
+    }
+
+    @RequestMapping(value = "/updateUser",method = RequestMethod.POST)
+    @ApiOperation(value = "",httpMethod = "GET")
+    public int updateUser(@RequestBody User user){
+        int ret = 0;
+        ret = template.update("updateUser", user);
+        return ret;
+    }
+
+    @RequestMapping(value = "/deleteUser",method = RequestMethod.POST)
+    @ApiOperation(value = "删除用户",httpMethod = "POST")
+    public int deleteUser(@RequestParam int id){
+        int ret;
+        ret = template.delete("deleteUser", id);
         return ret;
     }
 }

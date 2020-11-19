@@ -7,6 +7,6 @@
         <package name="com.course.model"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/mysql.xml"/>
+        <mapper resource="mapper/mapper.xml"/>
     </mappers>
 </configuration>
