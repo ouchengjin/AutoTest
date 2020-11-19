@@ -44,8 +44,8 @@ public class Demo {
         return ret;
     }
 
-    @RequestMapping(value = "/deleteUser",method = RequestMethod.POST)
-    @ApiOperation(value = "删除用户",httpMethod = "POST")
+    @RequestMapping(value = "/deleteUser",method = RequestMethod.GET)
+    @ApiOperation(value = "删除用户",httpMethod = "GET")
     public int deleteUser(@RequestParam int id){
         int ret;
         ret = template.delete("deleteUser", id);
