@@ -7,20 +7,29 @@
         select count(*) from user
     </select>
     <insert id="addUser" parameterType="com.course.model.User">
-        insert into user values(default,#{name},#{age},#{sex})
+        insert into user values(default,#{userName},#{password},#{age},#{sex},#{permission},#{isDelete})
     </insert>
 
     <update id="updateUser" parameterType="com.course.model.User">
         update user
         <set>
-            <if test="name != null and name != ''">
-                name = #{name},
+            <if test="userName != null and userName != ''">
+                userName = #{userName},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
             </if>
             <if test="age != null and age !=''">
                 age = #{age},
             </if>
             <if test="sex != null and sex != ''">
                 sex = #{sex},
+            </if>
+            <if test="permission != null and permission != ''">
+                permission = #{permission},
+            </if>
+            <if test="isDelete != null and isDelete != ''">
+                isDelete = #{isDelete},
             </if>
         </set>
         where id= #{id}
