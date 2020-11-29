@@ -16,12 +16,12 @@ public class User {
     public String toString() {
         return "{" +
                 "id:" + id +
-                ", userName:'" + userName + '\'' +
-                ", password:'" + password + '\'' +
+                ", userName:" + userName +
+                ", password:" + password +
                 ", age:" + age +
                 ", sex:" + sex +
                 ", permission:" + permission +
                 ", isDelete:" + isDelete +
-                '}';
+                "}";
     }
 }

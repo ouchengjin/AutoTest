@@ -11,5 +11,5 @@ public class TestConfig {
     public static String addUserUrl;
     public static DefaultHttpClient defaultHttpClient;
     //登陆成功之后才会赋值
-    public static CookieStore cookieStore;
+    public static CookieStore store;
 }

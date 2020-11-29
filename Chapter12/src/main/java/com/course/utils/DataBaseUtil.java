@@ -11,7 +11,7 @@ import java.io.InputStream;
 public class DataBaseUtil {
 
 
-    public SqlSession getSqlSession() throws IOException {
+    public static SqlSession getSqlSession() throws IOException {
         //获取数据库配置资源文件
         InputStream is = Resources.getResourceAsStream("databaseConfig.xml");
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(is);

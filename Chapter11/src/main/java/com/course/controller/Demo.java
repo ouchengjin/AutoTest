@@ -51,4 +51,25 @@ public class Demo {
         ret = template.delete("deleteUser", id);
         return ret;
     }
+
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @ApiOperation(value = "用户登陆",httpMethod = "POST")
+    public boolean login(@RequestBody User user){
+        boolean ret;
+        User user2 = template.selectOne("login", user);
+        if(user2!=null){
+            ret=true;
+        }else {
+            ret=false;
+        }
+        return ret;
+    }
+
+    @RequestMapping(value = "/getUserInfo",method = RequestMethod.POST)
+    @ApiOperation(value = "获取一条用户信息",httpMethod = "POST")
+    public User getUserInfo(@RequestBody User user){
+        User ret = template.selectOne("getUserInfo", user);
+        return ret;
+    }
+
 }
