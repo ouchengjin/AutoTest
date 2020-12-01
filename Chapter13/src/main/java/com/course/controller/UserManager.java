@@ -1,6 +1,7 @@
 package com.course.controller;
 
 import com.course.model.User;
+import com.course.utils.UtilsVerifyCookies;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
@@ -52,7 +53,7 @@ public class UserManager {
     @RequestMapping(value = "",method = RequestMethod.POST)
     public  boolean addUser(HttpServletRequest request,@RequestBody User user){
         boolean ret = false;
-        if(verifyCookies(request)){
+        if(UtilsVerifyCookies.verifyCookies(request)){
             log.info("cookies验证通过");
             int addUserRet = template.insert("addUser", user);
             if(addUserRet>0){
@@ -72,7 +73,7 @@ public class UserManager {
     @RequestMapping(value = "/getUserInfo",method = RequestMethod.POST)
     public List<User> getUserInfo(HttpServletRequest request,@RequestBody User user){
         List<User> userList = new ArrayList<>();
-        if(verifyCookies(request)){
+        if(UtilsVerifyCookies.verifyCookies(request)){
             userList = template.selectList("getUserInfo", user);
             log.info("获取的用户信息为:"+userList);
         }else{
@@ -86,7 +87,7 @@ public class UserManager {
     @RequestMapping(value = "/updateUserInfo",method = RequestMethod.POST)
     public int updateUserInfo(HttpServletRequest request,@RequestBody User user){
         int ret = 0;
-        if(verifyCookies(request)){
+        if(UtilsVerifyCookies.verifyCookies(request)){
             int updateUserInfoRet = template.update("updateUserInfo", user);
             if(updateUserInfoRet>0){
                 log.info("用户信息更新成功条数"+ret);
@@ -104,8 +105,8 @@ public class UserManager {
     @RequestMapping(value = "/deleteUserInfo",method = RequestMethod.POST)
     public int deleteUserInfo(HttpServletRequest request,@RequestBody User user){
         int ret = 0;
-        if(verifyCookies(request)){
-            int deleteUserInfoRet = template.delete("deleteUserInfo", user);
+        if(UtilsVerifyCookies.verifyCookies(request)){
+            int deleteUserInfoRet = template.delete("updateUserInfo", user);
             if(deleteUserInfoRet>0){
                 log.info("用户信息删除成功条数"+ret);
             }else{
@@ -118,24 +119,6 @@ public class UserManager {
         return ret;
     }
 
-    private boolean verifyCookies(HttpServletRequest request) {
-        boolean ret = false;
-        Cookie[] cookies = request.getCookies();
-        if(!Objects.isNull(cookies)){
-            for (Cookie cookie:cookies){
-                String name = cookie.getName();
-                String value = cookie.getValue();
 
-                if (name.equals("login")&&value.equals("true")){
-                    ret = true;
-                    log.info("cookies验证通过");
-                }
-            }
-
-        }else{
-            log.info("cookies验证不通过");
-        }
-        return ret;
-    }
 
 }
