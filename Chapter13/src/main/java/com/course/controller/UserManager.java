@@ -34,14 +34,16 @@ public class UserManager {
         Boolean ret = true;
         User u = (User)template.selectOne("login",user);
         Cookie cookie = new Cookie("login","true");
-        response.addCookie(cookie);
+
         log.info("查询到的结果是:"+u);
 
         if(u!=null){
             ret = true;
             log.info("登陆的用户是:"+u.getUserName());
+            response.addCookie(cookie);
         }else {
             ret = false;
+            log.info("登陆失败");
         }
 
 
@@ -50,17 +52,15 @@ public class UserManager {
     }
 
     @ApiOperation(value = "添加用户接口",httpMethod = "POST")
-    @RequestMapping(value = "",method = RequestMethod.POST)
-    public  boolean addUser(HttpServletRequest request,@RequestBody User user){
-        boolean ret = false;
+    @RequestMapping(value = "/addUser",method = RequestMethod.POST)
+    public  int addUser(HttpServletRequest request,@RequestBody User user){
+        int ret=0;
         if(UtilsVerifyCookies.verifyCookies(request)){
             log.info("cookies验证通过");
-            int addUserRet = template.insert("addUser", user);
-            if(addUserRet>0){
-                ret = true;
-                log.info("添加用户数量是:"+addUserRet);
+            ret = template.insert("addUser", user);
+            if(ret>0){
+                log.info("添加用户数量是:"+ret);
             }else {
-                ret = false;
                 log.info("添加用户失败,插入数据库失败");
             }
         }else {

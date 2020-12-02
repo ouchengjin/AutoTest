@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Chapter12</artifactId>
+    <artifactId>Chapter12_2</artifactId>
 
     <build>
         <plugins>
@@ -21,10 +21,7 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
-
-
             <!--testng打jar包运行的插件引入-->
-
         </plugins>
     </build>
 
@@ -80,6 +77,12 @@
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>compile</scope>
+        </dependency>
         <!--<dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -87,6 +90,5 @@
         </dependency>-->
 
     </dependencies>
-
 
 </project>

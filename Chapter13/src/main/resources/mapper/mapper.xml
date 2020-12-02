@@ -17,7 +17,7 @@
     <insert id="addUser" parameterType="com.course.model.User" >
         insert into user
         (userName,password,age,sex,permission,isDelete) values
-        (#{userName},#{password}#{age}#{sex}#{permission}#{isDelete})
+        (#{userName},#{password},#{age},#{sex},#{permission},#{isDelete})
     </insert>
     
     <!--获取用户sql-->
@@ -50,22 +50,22 @@
         update user
         <set>
             <if test="userName != null and userName != ''">
-                and userName = #{userName},
+                userName = #{userName},
             </if>
             <if test="password != null and password != ''">
-                and password = #{password},
+                password = #{password},
             </if>
             <if test="age != null and age != ''">
-                and age = #{age},
+                age = #{age},
             </if>
             <if test="sex != null and sex != ''">
-                and sex = #{sex},
+                sex = #{sex},
             </if>
             <if test="permission != null and permission != ''">
-                and permission = #{permission},
+                permission = #{permission},
             </if>
             <if test="isDelete != null and isDelete != ''">
-                and isDelete = #{isDelete},
+                isDelete = #{isDelete},
             </if>
         </set>
         where id= #{id}
