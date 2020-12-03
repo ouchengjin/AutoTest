@@ -8,10 +8,7 @@ import lombok.extern.log4j.Log4j2;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -71,6 +68,7 @@ public class UserManager {
 
     @ApiOperation(value = "获取用户信息(列表)",httpMethod = "POST")
     @RequestMapping(value = "/getUserInfo",method = RequestMethod.POST)
+    @ResponseBody
     public List<User> getUserInfo(HttpServletRequest request,@RequestBody User user){
         List<User> userList = new ArrayList<>();
         if(UtilsVerifyCookies.verifyCookies(request)){

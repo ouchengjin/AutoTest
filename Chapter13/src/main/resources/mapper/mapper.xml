@@ -42,6 +42,9 @@
             <if test="isDelete != null and isDelete != ''">
                 and isDelete = #{isDelete}
             </if>
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
         </where>
     </select>
     

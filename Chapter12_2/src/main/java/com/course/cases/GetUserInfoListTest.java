@@ -1,5 +1,6 @@
 package com.course.cases;
 
+import com.alibaba.fastjson.JSON;
 import com.course.config.TestConfig;
 import com.course.model.GetUserListCase;
 import com.course.model.User;
@@ -30,30 +31,21 @@ public class GetUserInfoListTest {
         System.out.println(TestConfig.getUserListUrl);
 
         //下边为写完接口的代码
-        JSONArray resultJson = getJsonResult(getUserListCase);
+        List<User> result = getJsonResult(getUserListCase);
         /**
          * 可以先讲
          * 验证
          */
         Thread.sleep(2000);
         List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
-        for(User u : userList){
-            System.out.println("list获取的user:"+u.toString());
-        }
-        JSONArray userListJson = new JSONArray(userList);
 
-        Assert.assertEquals(userListJson.length(),resultJson.length());
-        //有疑问
-        for(int i = 0;i<resultJson.length();i++){
-            JSONObject expect = (JSONObject) resultJson.get(i);
-            JSONObject actual = (JSONObject) userListJson.get(i);
-            System.out.println(expect.toString()+"--->"+actual.toString());
-            Assert.assertEquals(expect.toString(), actual.toString());
-        }
+
+        Assert.assertEquals(result,userList);
+
 
     }
 
-    private JSONArray getJsonResult(GetUserListCase getUserListCase) throws IOException {
+    private List<User> getJsonResult(GetUserListCase getUserListCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserListUrl);
         JSONObject param = new JSONObject();
         param.put("userName",getUserListCase.getUserName());
@@ -72,11 +64,9 @@ public class GetUserInfoListTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        JSONArray jsonArray = new JSONArray(result);
+        List<User> userList = JSON.parseArray(result, User.class);
 
-        System.out.println("调用接口list result:"+result);
-
-        return jsonArray;
+        return userList;
 
     }
 
