@@ -2,39 +2,39 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
-<mapper namespace="com.course.model">
+<mapper namespace="SQLMapper">
 
     <!--获取登陆接口case-->
-    <select id="loginCase" parameterType="Integer"  resultType="com.course.model.LoginCase">
+    <select id="loginCase" parameterType="Integer"  resultType="loginCase">
 
         select * from loginCase
-        where id = #{id};
+        where id = #{id}
     </select>
     <!--添加用户接口case-->
-    <select id="addUserCase" parameterType="Integer" resultType="com.course.model.AddUserCase">
-        select * from addUserCase where id=#{id};
+    <select id="addUserCase" parameterType="Integer" resultType="addUserCase">
+        select * from addUserCase where id=#{id}
     </select>
 
     <!--获取用户信息case-->
-    <select id="getUserInfoCase" parameterType="Integer" resultType="com.course.model.GetUserInfoCase">
+    <select id="getUserInfoCase" parameterType="Integer" resultType="getUserInfoCase">
         <!-- SQL语句 -->
-        select * from getUserInfoCase where id=#{id};
+        select * from getUserInfoCase where id=#{id}
     </select>
 
     <!--获取用户列表case-->
-    <select id="getUserListCase" parameterType="Integer" resultType="com.course.model.GetUserListCase">
+    <select id="getUserListCase" parameterType="Integer" resultType="getUserListCase">
         <!-- SQL语句 -->
-        select * from getUserListCase where id=#{id};
+        select * from getUserListCase where id=#{id}
     </select>
 
     <!--更新/删除用户信息case-->
-    <select id="updateUserInfoCase" parameterType="Integer" resultType="com.course.model.UpdateUserInfoCase">
-        select * from updateUserInfoCase where id = #{id};
+    <select id="updateUserInfoCase" parameterType="Integer" resultType="updateUserInfoCase">
+        select * from updateUserInfoCase where id = #{id}
     </select>
 
 
     <!--添加用户接口-->
-    <select id="addUser" parameterType="com.course.model.AddUserCase" resultType="com.course.model.User">
+    <select id="addUser" parameterType="com.course.model.AddUserCase" resultType="user">
         select * from user where
         userName=#{userName}
         and password=#{password}
@@ -46,14 +46,14 @@
     </select>
 
     <!--获取用户信息-->
-    <select id="getUserInfo" parameterType="com.course.model.GetUserInfoCase" resultType="com.course.model.User">
+    <select id="getUserInfo" parameterType="com.course.model.GetUserInfoCase" resultType="user">
         <!-- SQL语句 -->
         select * from user where
-        id=#{userId};
+        id=#{userId}
     </select>
 
     <!--获取用户列表-->
-    <select id="getUserList" parameterType="com.course.model.GetUserListCase" resultType="com.course.model.User">
+    <select id="getUserList" parameterType="com.course.model.GetUserListCase" resultType="user">
         <!-- SQL语句 -->
         select * from user
         <where>
@@ -71,7 +71,7 @@
     </select>
 
     <!--获取更新后的数据-->
-    <select id="getUpdateUserInfo" parameterType="com.course.model.UpdateUserInfoCase" resultType="com.course.model.User">
+    <select id="getUpdateUserInfo" parameterType="com.course.model.UpdateUserInfoCase" resultType="user">
         select * from user
         <where>
             <if test="null != userName and '' !=userName">
@@ -90,7 +90,7 @@
                 AND isDelete=#{isDelete}
             </if>
         </where>
-        And id = #{userId};
+        And id = #{userId}
     </select>
 
 

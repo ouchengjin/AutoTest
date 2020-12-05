@@ -4,13 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.course.config.TestConfig;
 import com.course.model.GetUserListCase;
 import com.course.model.User;
-import com.course.utils.DataBaseUtil;
+import com.course.utils.MyBatisUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,8 +24,9 @@ public class GetUserInfoListTest {
     @Test(dependsOnGroups="loginTrue",description = "获取性别为男的用户信息")
     public void getUserListInfo() throws IOException, InterruptedException {
 
-        SqlSession session = DataBaseUtil.getSqlSession();
+        SqlSession session = MyBatisUtil.getSession();
         GetUserListCase getUserListCase = session.selectOne("getUserListCase",1);
+        MyBatisUtil.close();
         System.out.println(getUserListCase.toString());
         System.out.println(TestConfig.getUserListUrl);
 
@@ -37,8 +37,9 @@ public class GetUserInfoListTest {
          * 验证
          */
         Thread.sleep(2000);
-        List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
-
+        SqlSession session2 = MyBatisUtil.getSession();
+        List<User> userList = session2.selectList(getUserListCase.getExpected(),getUserListCase);
+        MyBatisUtil.close();
 
         Assert.assertEquals(result,userList);
 

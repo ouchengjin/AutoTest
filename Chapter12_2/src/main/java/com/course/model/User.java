@@ -12,7 +12,7 @@ public class User {
     private int permission;
     private int isDelete;
 
-    @Override
+   /* @Override
     public String toString() {
         return "{" +
                 "id:" + id +
@@ -23,5 +23,18 @@ public class User {
                 ", permission:" + permission +
                 ", isDelete:" + isDelete +
                 "}";
+    }*/
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", permission=" + permission +
+                ", isDelete=" + isDelete +
+                '}';
     }
 }

@@ -24,8 +24,6 @@
             <!--testng打jar包运行的插件引入-->
         </plugins>
     </build>
-
-
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -83,17 +81,16 @@
             <version>6.14.3</version>
             <scope>compile</scope>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.12</version>
-        </dependency>-->
-        <dependency>
+            <version>1.2.17</version>
+        </dependency>
+         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.38</version>
         </dependency>
-
     </dependencies>
 
 </project>

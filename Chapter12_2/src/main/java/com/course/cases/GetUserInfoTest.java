@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.course.config.TestConfig;
 import com.course.model.GetUserInfoCase;
 import com.course.model.User;
-import com.course.utils.DataBaseUtil;
+import com.course.utils.MyBatisUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -22,8 +22,9 @@ public class GetUserInfoTest {
 
     @Test(dependsOnGroups="loginTrue",description = "获取userId为1的用户信息")
     public void getUserInfo() throws IOException, InterruptedException {
-        SqlSession session = DataBaseUtil.getSqlSession();
+        SqlSession session = MyBatisUtil.getSession();
         GetUserInfoCase getUserInfoCase = session.selectOne("getUserInfoCase",1);
+        MyBatisUtil.close();
         System.out.println(getUserInfoCase.toString());
         System.out.println(TestConfig.getUserInfoUrl);
 
@@ -34,7 +35,9 @@ public class GetUserInfoTest {
          */
         Thread.sleep(4000);
         //验证
-        List<User> userList = session.selectList(getUserInfoCase.getExpected(), getUserInfoCase);
+        SqlSession session2 = MyBatisUtil.getSession();
+        List<User> userList = session2.selectList(getUserInfoCase.getExpected(), getUserInfoCase);
+        MyBatisUtil.close();
         System.out.println("自己查库获取用户信息:"+userList.toString());
         System.out.println("调用接口获取用户信息:"+result.toString());
         Assert.assertEquals(userList,result);

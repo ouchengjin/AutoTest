@@ -4,7 +4,7 @@ import com.course.config.TestConfig;
 import com.course.model.InterfaceName;
 import com.course.model.LoginCase;
 import com.course.utils.ConfigFileUtil;
-import com.course.utils.DataBaseUtil;
+import com.course.utils.MyBatisUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -37,8 +37,10 @@ public class LoginTest {
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
 
-        SqlSession session = DataBaseUtil.getSqlSession();
+        SqlSession session = MyBatisUtil.getSession();
         LoginCase loginCase = (LoginCase)session.selectOne("loginCase",1);
+        MyBatisUtil.close();
+
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
 
@@ -53,8 +55,9 @@ public class LoginTest {
 
     @Test(description = "用户登陆失败接口")
     public void loginFalse() throws IOException {
-        SqlSession session = DataBaseUtil.getSqlSession();
+        SqlSession session = MyBatisUtil.getSession();
         LoginCase loginCase = session.selectOne("loginCase",2);
+        MyBatisUtil.close();
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
 

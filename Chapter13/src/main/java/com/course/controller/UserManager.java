@@ -7,7 +7,6 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -15,7 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @Log4j2
 @RestController
@@ -24,6 +22,7 @@ import java.util.Objects;
 public class UserManager {
     @Autowired
     private SqlSessionTemplate template;
+
 
     @ApiOperation(value = "登录接口",httpMethod = "POST")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
@@ -86,8 +85,8 @@ public class UserManager {
     public int updateUserInfo(HttpServletRequest request,@RequestBody User user){
         int ret = 0;
         if(UtilsVerifyCookies.verifyCookies(request)){
-            int updateUserInfoRet = template.update("updateUserInfo", user);
-            if(updateUserInfoRet>0){
+            ret = template.update("updateUserInfo", user);
+            if(ret>0){
                 log.info("用户信息更新成功条数"+ret);
             }else{
                 log.info("用户更新失败,数据库执行失败");
@@ -104,8 +103,8 @@ public class UserManager {
     public int deleteUserInfo(HttpServletRequest request,@RequestBody User user){
         int ret = 0;
         if(UtilsVerifyCookies.verifyCookies(request)){
-            int deleteUserInfoRet = template.delete("updateUserInfo", user);
-            if(deleteUserInfoRet>0){
+            ret = template.delete("updateUserInfo", user);
+            if(ret>0){
                 log.info("用户信息删除成功条数"+ret);
             }else{
                 log.info("用户删除失败,数据库执行失败");

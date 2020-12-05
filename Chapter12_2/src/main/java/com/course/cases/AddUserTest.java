@@ -3,7 +3,7 @@ package com.course.cases;
 import com.course.config.TestConfig;
 import com.course.model.AddUserCase;
 import com.course.model.User;
-import com.course.utils.DataBaseUtil;
+import com.course.utils.MyBatisUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -21,8 +21,9 @@ public class AddUserTest {
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口接口")
     public void addUser() throws IOException, InterruptedException {
 
-        SqlSession session = DataBaseUtil.getSqlSession();
+        SqlSession session = MyBatisUtil.getSession();
         AddUserCase addUserCase = (AddUserCase)session.selectOne("addUserCase",1);
+        MyBatisUtil.close();
         System.out.println(addUserCase.toString());
         System.out.println(TestConfig.addUserUrl);
 
@@ -37,7 +38,9 @@ public class AddUserTest {
         //查询用户看是否添加成功
         Thread.sleep(4000);
         //验证返回结果
-        User user = (User)session.selectOne("addUser",addUserCase);
+        SqlSession session2 = MyBatisUtil.getSession();
+        User user = (User)session2.selectOne("addUser",addUserCase);
+        MyBatisUtil.close();
         System.out.println("addUser: "+user);
 
 

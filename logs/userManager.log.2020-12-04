@@ -1,0 +1,643 @@
+2020-12-04 21:59:43.339 [main] INFO  com.course.Application - Starting Application on DESKTOP-L7F4APK with PID 15888 (C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\target\classes started by aaron in C:\Users\aaron\.ssh\workspace\muke\AutoTest)
+2020-12-04 21:59:43.345 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-12-04 21:59:43.405 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 21:59:43 CST 2020]; root of context hierarchy
+2020-12-04 21:59:44.230 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-12-04 21:59:44.534 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bca7260] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-04 21:59:45.017 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-12-04 21:59:45.038 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-04 21:59:45.039 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-12-04 21:59:45.046 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\oracleclient;E:\oracle\product\11.2.0\dbhome_1\bin;E:\python\Scripts\;E:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\课程代码\robocopy;C:\;rogram Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\webtours\c\bin;E:\webtours\perl\site\bin;E:\webtours\perl\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\Git\cmd;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;;E:\VSCODE\Microsoft VS Code\bin;E:\idea\IntelliJ IDEA 2020.1\bin;;.]
+2020-12-04 21:59:45.138 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-04 21:59:45.138 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1733 ms
+2020-12-04 21:59:45.255 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-12-04 21:59:45.260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-04 21:59:45.260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-04 21:59:45.260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-04 21:59:45.260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-04 21:59:45.959 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 21:59:45.959 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 21:59:45.960 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-12-04 21:59:45.960 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 21:59:45.960 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.deleteUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 21:59:45.962 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-12-04 21:59:45.966 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-12-04 21:59:45.967 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-12-04 21:59:45.968 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-12-04 21:59:45.972 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-04 21:59:45.972 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-04 21:59:46.288 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 21:59:43 CST 2020]; root of context hierarchy
+2020-12-04 21:59:46.346 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 21:59:46.346 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 21:59:46.382 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 21:59:46.566 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-12-04 21:59:46.568 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-12-04 21:59:46.573 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-12-04 21:59:46.577 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-12-04 21:59:46.577 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-04 21:59:46.595 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-04 21:59:46.607 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-04 21:59:46.828 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-12-04 21:59:46.831 [main] INFO  com.course.Application - Started Application in 3.845 seconds (JVM running for 4.444)
+2020-12-04 22:00:11.091 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-04 22:00:11.091 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-04 22:00:11.114 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-12-04 22:00:11.189 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-04 22:00:11.341 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-04 22:00:11.366 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:00:11.366 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:00:11.422 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:00:11.422 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:00:11.456 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:00:11.456 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:00:11.459 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:00:15.489 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:00:15.516 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:00:19.641 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:00:19.646 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:00:21.691 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:00:21.693 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:00:23.723 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:00:23.725 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=48, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:02:39.798 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:02:39.799 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:02:39.834 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:02:39.834 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:02:39.860 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:02:39.861 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:02:39.863 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:02:43.890 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:02:43.892 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:02:47.983 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:02:47.985 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:02:52.027 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:02:52.029 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:02:56.058 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:02:56.061 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=49, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:03:52.746 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:03:52.746 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:03:52.778 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:03:52.778 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:03:52.807 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:03:52.807 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:03:52.809 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:03:56.833 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:03:56.835 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:04:00.927 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:04:00.930 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:04:04.969 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:04:04.971 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:04:08.998 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:04:09.000 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=49, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=50, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:22:48.624 [main] INFO  com.course.Application - Starting Application on DESKTOP-L7F4APK with PID 15116 (C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\target\classes started by aaron in C:\Users\aaron\.ssh\workspace\muke\AutoTest)
+2020-12-04 22:22:48.628 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-12-04 22:22:48.688 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:22:48 CST 2020]; root of context hierarchy
+2020-12-04 22:22:49.509 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-12-04 22:22:49.798 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd6b1423] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-04 22:22:50.240 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-12-04 22:22:50.259 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-04 22:22:50.259 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-12-04 22:22:50.267 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\oracleclient;E:\oracle\product\11.2.0\dbhome_1\bin;E:\python\Scripts\;E:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\课程代码\robocopy;C:\;rogram Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\webtours\c\bin;E:\webtours\perl\site\bin;E:\webtours\perl\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\Git\cmd;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;;E:\VSCODE\Microsoft VS Code\bin;E:\idea\IntelliJ IDEA 2020.1\bin;;.]
+2020-12-04 22:22:50.351 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-04 22:22:50.352 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1664 ms
+2020-12-04 22:22:50.458 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-12-04 22:22:50.461 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-04 22:22:50.462 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-04 22:22:50.462 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-04 22:22:50.462 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-04 22:22:51.115 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:22:51.116 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:22:51.117 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-12-04 22:22:51.117 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.deleteUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:22:51.118 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:22:51.119 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-12-04 22:22:51.123 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-12-04 22:22:51.124 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-12-04 22:22:51.125 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-12-04 22:22:51.129 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-04 22:22:51.129 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-04 22:22:51.484 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:22:48 CST 2020]; root of context hierarchy
+2020-12-04 22:22:51.546 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:22:51.547 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:22:51.589 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:22:51.771 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-12-04 22:22:51.773 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-12-04 22:22:51.778 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-12-04 22:22:51.783 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-12-04 22:22:51.783 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-04 22:22:51.801 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-04 22:22:51.811 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-04 22:22:52.022 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-12-04 22:22:52.025 [main] INFO  com.course.Application - Started Application in 3.717 seconds (JVM running for 4.224)
+2020-12-04 22:23:18.919 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-04 22:23:18.919 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-04 22:23:18.937 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-12-04 22:23:19.026 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-04 22:23:19.161 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-04 22:23:19.189 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:23:19.189 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:23:19.246 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:23:19.246 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:23:19.282 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:23:19.282 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:23:19.290 [http-nio-8888-exec-3] ERROR o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession] with root cause
+java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession
+	at org.mybatis.spring.SqlSessionTemplate.commit(SqlSessionTemplate.java:326)
+	at com.course.controller.UserManager.addUser(UserManager.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-04 22:23:19.361 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:23:19.402 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:23:23.504 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:23:23.507 [http-nio-8888-exec-5] ERROR o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession] with root cause
+java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession
+	at org.mybatis.spring.SqlSessionTemplate.commit(SqlSessionTemplate.java:326)
+	at com.course.controller.UserManager.updateUserInfo(UserManager.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-04 22:23:23.531 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:23:23.533 [http-nio-8888-exec-6] ERROR o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession] with root cause
+java.lang.UnsupportedOperationException: Manual commit is not allowed over a Spring managed SqlSession
+	at org.mybatis.spring.SqlSessionTemplate.commit(SqlSessionTemplate.java:326)
+	at com.course.controller.UserManager.updateUserInfo(UserManager.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-04 22:23:23.565 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:23:23.567 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=51, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:25:41.267 [main] INFO  com.course.Application - Starting Application on DESKTOP-L7F4APK with PID 2784 (C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\target\classes started by aaron in C:\Users\aaron\.ssh\workspace\muke\AutoTest)
+2020-12-04 22:25:41.271 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-12-04 22:25:41.324 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:25:41 CST 2020]; root of context hierarchy
+2020-12-04 22:25:42.117 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-12-04 22:25:42.423 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17e20cb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-04 22:25:42.893 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-12-04 22:25:42.913 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-04 22:25:42.913 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-12-04 22:25:42.921 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\oracleclient;E:\oracle\product\11.2.0\dbhome_1\bin;E:\python\Scripts\;E:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\课程代码\robocopy;C:\;rogram Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\webtours\c\bin;E:\webtours\perl\site\bin;E:\webtours\perl\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\Git\cmd;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;;E:\VSCODE\Microsoft VS Code\bin;E:\idea\IntelliJ IDEA 2020.1\bin;;.]
+2020-12-04 22:25:43.000 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-04 22:25:43.000 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1676 ms
+2020-12-04 22:25:43.110 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-12-04 22:25:43.113 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-04 22:25:43.114 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-04 22:25:43.114 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-04 22:25:43.114 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-04 22:25:43.733 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:25:43.734 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:25:43.735 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-12-04 22:25:43.735 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.deleteUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:25:43.735 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:25:43.736 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-12-04 22:25:43.739 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-12-04 22:25:43.740 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-12-04 22:25:43.741 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-12-04 22:25:43.745 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-04 22:25:43.745 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-04 22:25:44.056 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:25:41 CST 2020]; root of context hierarchy
+2020-12-04 22:25:44.122 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:25:44.122 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:25:44.158 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:25:44.318 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-12-04 22:25:44.320 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-12-04 22:25:44.324 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-12-04 22:25:44.328 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-12-04 22:25:44.328 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-04 22:25:44.344 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-04 22:25:44.355 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-04 22:25:44.566 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-12-04 22:25:44.570 [main] INFO  com.course.Application - Started Application in 3.594 seconds (JVM running for 4.091)
+2020-12-04 22:26:05.284 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-04 22:26:05.285 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-04 22:26:05.305 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2020-12-04 22:26:05.392 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-04 22:26:05.560 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-04 22:26:05.586 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:26:05.586 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:26:05.640 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:26:05.640 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:26:05.677 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:26:05.677 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:26:05.679 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:26:09.708 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:26:09.730 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:26:13.837 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:26:13.838 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:26:17.879 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:26:17.882 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:26:21.910 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:26:21.913 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=51, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=52, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:27:12.251 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:27:12.251 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:27:12.286 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:27:12.286 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:27:12.311 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:27:12.311 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:27:12.313 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:27:16.339 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:27:16.341 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:27:20.429 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:27:20.431 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:27:24.474 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:27:24.476 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:27:28.503 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:27:28.505 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=53, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:29:13.974 [main] INFO  com.course.Application - Starting Application on DESKTOP-L7F4APK with PID 2228 (C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\target\classes started by aaron in C:\Users\aaron\.ssh\workspace\muke\AutoTest)
+2020-12-04 22:29:13.977 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-12-04 22:29:14.032 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:29:14 CST 2020]; root of context hierarchy
+2020-12-04 22:29:14.835 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-12-04 22:29:15.136 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7214d4a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-04 22:29:15.594 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-12-04 22:29:15.614 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-04 22:29:15.614 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2020-12-04 22:29:15.622 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Java\jdk1.8.0_211\bin;E:\oracleclient;E:\oracle\product\11.2.0\dbhome_1\bin;E:\python\Scripts\;E:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\课程代码\robocopy;C:\;rogram Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\webtours\c\bin;E:\webtours\perl\site\bin;E:\webtours\perl\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;E:\Git\cmd;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;;E:\VSCODE\Microsoft VS Code\bin;E:\idea\IntelliJ IDEA 2020.1\bin;;.]
+2020-12-04 22:29:15.703 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-04 22:29:15.703 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1671 ms
+2020-12-04 22:29:15.809 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-12-04 22:29:15.813 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-04 22:29:15.813 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-04 22:29:15.813 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-04 22:29:15.813 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-04 22:29:16.455 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:29:16.457 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public int com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:29:16.457 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:29:16.457 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/deleteUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.deleteUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-12-04 22:29:16.457 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-12-04 22:29:16.458 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-12-04 22:29:16.461 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-12-04 22:29:16.462 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-12-04 22:29:16.462 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-12-04 22:29:16.467 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-04 22:29:16.468 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-04 22:29:16.795 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Fri Dec 04 22:29:14 CST 2020]; root of context hierarchy
+2020-12-04 22:29:16.855 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:29:16.856 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:29:16.892 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-04 22:29:17.077 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-12-04 22:29:17.079 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-12-04 22:29:17.083 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-12-04 22:29:17.087 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-12-04 22:29:17.087 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-04 22:29:17.101 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-04 22:29:17.111 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-04 22:29:17.299 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-12-04 22:29:17.302 [main] INFO  com.course.Application - Started Application in 3.614 seconds (JVM running for 4.1)
+2020-12-04 22:29:27.410 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-04 22:29:27.410 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-04 22:29:27.426 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2020-12-04 22:29:27.498 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-04 22:29:27.637 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-04 22:29:27.661 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:29:27.661 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:29:27.718 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:29:27.718 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:29:27.750 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:29:27.750 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:29:27.752 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:29:31.786 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:29:31.811 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:29:35.918 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:29:35.920 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:29:40.965 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:29:40.967 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:29:45.994 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:29:45.997 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=54, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:31:47.183 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:31:47.183 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:31:47.218 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:31:47.218 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:31:47.243 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:31:47.244 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:31:47.246 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:31:51.270 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:31:51.272 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:31:55.359 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:31:55.362 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:32:03.404 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:32:03.406 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:32:11.435 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:32:11.438 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=55, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:43:13.028 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:43:13.028 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:43:13.061 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:43:13.061 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:43:13.085 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:43:13.085 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:43:13.087 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:43:17.112 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:43:17.114 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:43:21.208 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:43:21.210 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:43:36.253 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:43:36.255 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:43:51.285 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:43:51.287 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=56, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 22:44:18.567 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 22:44:18.567 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 22:44:18.598 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 22:44:18.598 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 22:44:18.622 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:44:18.622 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 22:44:18.624 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 22:44:22.651 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:44:22.653 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 22:44:26.740 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:44:26.742 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:44:29.785 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:44:29.787 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 22:44:32.816 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 22:44:32.818 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=56, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=57, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:10:28.669 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:10:28.669 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:10:28.703 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:10:28.704 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:10:28.729 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:10:28.730 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:10:28.731 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:10:32.762 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:10:32.763 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:10:36.864 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:10:36.866 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:10:39.914 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:10:39.916 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:10:42.945 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:10:42.948 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=58, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:28:33.782 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:28:33.783 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:28:33.821 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:28:33.822 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:28:33.847 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:28:33.848 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:28:33.850 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:28:37.877 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:28:37.879 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:28:41.976 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:28:41.977 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:28:50.025 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:28:50.029 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:28:58.057 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:28:58.060 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=8, userName=wu5, password=qazedx, age=40, sex=1, permission=0, isDelete=1), User(id=59, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:34:59.181 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:34:59.182 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:34:59.219 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:34:59.220 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:34:59.248 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:34:59.248 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:34:59.250 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:35:03.286 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:35:03.288 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:35:07.399 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:35:07.401 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:40:12.576 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:40:12.578 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 用户更新失败,数据库执行失败
+2020-12-04 23:40:26.030 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:40:26.030 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:40:26.071 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:40:26.071 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:40:26.098 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:40:26.099 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:40:26.100 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:40:30.134 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:40:30.135 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:40:34.246 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:40:34.249 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:41:13.411 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:41:13.412 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 用户更新失败,数据库执行失败
+2020-12-04 23:41:16.314 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:41:16.314 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:41:16.356 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:41:16.356 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:41:16.384 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:41:16.384 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:41:16.386 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:41:20.420 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:41:20.424 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:41:24.533 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:41:24.535 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:43:03.211 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:43:03.213 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 用户更新失败,数据库执行失败
+2020-12-04 23:43:39.341 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:43:39.343 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=61, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=62, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:44:30.773 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:44:30.773 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:44:30.809 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:44:30.809 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:44:30.838 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:44:30.838 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:44:30.840 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:44:34.870 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:44:34.872 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:44:38.966 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:44:38.968 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:44:42.009 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:44:42.010 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 用户更新失败,数据库执行失败
+2020-12-04 23:44:45.037 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:44:45.039 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=0), User(id=61, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=62, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=63, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:45:38.146 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:45:38.146 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:45:38.183 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:45:38.183 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:45:38.209 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:45:38.209 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:45:38.211 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:45:42.239 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:45:42.241 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:45:46.331 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:45:46.333 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:45:49.376 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:45:49.377 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:45:52.404 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:45:52.406 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=61, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=62, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=63, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=64, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:46:37.065 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:46:37.066 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:46:37.101 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:46:37.101 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:46:37.127 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:46:37.127 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:46:37.134 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:46:41.165 [http-nio-8888-exec-2] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:46:41.167 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:46:45.265 [http-nio-8888-exec-3] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:46:45.270 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:46:48.310 [http-nio-8888-exec-4] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:46:48.315 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:46:51.342 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:46:51.344 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=61, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=62, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=63, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=64, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=65, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+2020-12-04 23:47:24.398 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:47:24.398 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:47:24.431 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:47:24.431 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:47:24.457 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:47:24.457 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:47:24.459 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:47:28.488 [http-nio-8888-exec-10] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:47:28.490 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:47:32.580 [http-nio-8888-exec-1] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:47:32.582 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:47:52.979 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是:User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)
+2020-12-04 23:47:52.979 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 登陆的用户是:zhangsan
+2020-12-04 23:47:53.018 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是:null
+2020-12-04 23:47:53.018 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登陆失败
+2020-12-04 23:47:53.045 [http-nio-8888-exec-5] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:47:53.045 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-12-04 23:47:53.047 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户数量是:1
+2020-12-04 23:47:57.076 [http-nio-8888-exec-6] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:47:57.077 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+2020-12-04 23:48:01.168 [http-nio-8888-exec-7] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:48:01.170 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:48:04.210 [http-nio-8888-exec-8] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:48:04.212 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 用户信息更新成功条数0
+2020-12-04 23:48:07.241 [http-nio-8888-exec-9] INFO  com.course.utils.UtilsVerifyCookies - cookies验证通过
+2020-12-04 23:48:07.243 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 获取的用户信息为:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=61, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=62, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=63, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=64, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=65, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=66, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=67, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
