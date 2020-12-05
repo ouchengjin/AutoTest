@@ -21,7 +21,7 @@
       <module name="Chapter10" target="8" />
       <module name="Chapter11" target="1.8" />
       <module name="Chapter12" target="1.6" />
-      <module name="Chapter12_2" target="1.6" />
+      <module name="Chapter12_2" target="1.8" />
       <module name="Chapter13" target="1.8" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="6" />
@@ -34,7 +34,7 @@
       <module name="Chapter11" options="-parameters" />
       <module name="Chapter12" options="-parameters" />
       <module name="Chapter12_2" options="-parameters" />
-      <module name="Chapter13" options="-parameters" />
+      <module name="Chapter13" options="-parameters -extdirs C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13/lib" />
       <module name="Chapter6" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
     </option>
