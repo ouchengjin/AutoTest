@@ -24,6 +24,7 @@ public class MyBatisUtil {
 		if (tl.get() == null) {
 			tl.set(factory.openSession());
 		}
+		System.out.println("sucess");
 		return tl.get();
 	}
 
