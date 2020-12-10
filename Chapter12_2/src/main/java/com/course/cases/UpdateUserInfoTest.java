@@ -19,7 +19,7 @@ import java.io.IOException;
 public class UpdateUserInfoTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "更改用户信息")
-    public void updateUserInfo() throws IOException, InterruptedException {
+    public void updateUserInfo() throws Exception {
         System.out.println(TestConfig.updateUserInfoUrl);
         SqlSession session = MyBatisUtil.getSession();
         UpdateUserInfoCase updateUserInfoCase = (UpdateUserInfoCase)session.selectOne("updateUserInfoCase",1);
@@ -29,24 +29,25 @@ public class UpdateUserInfoTest {
 
         //下边为写完接口的代码
         int result = getResult(updateUserInfoCase);
-        /**
-         * 下边这两行跟着测试的课讲
-         */
-        //获取更新后的结果
-        Thread.sleep(3000);
-        SqlSession session2 = MyBatisUtil.getSession();
-        User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
-        MyBatisUtil.close();
+        if (result==1){
+            Thread.sleep(4000);
+            //验证返回结果,查询用户看是否添加成功
+            SqlSession session2 = MyBatisUtil.getSession();
+            User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
+            MyBatisUtil.close();
+            System.out.println("预期:"+updateUserInfoCase+".实际:"+user);
+            //处理结果，就是判断返回结果是否符合预期
+            Assert.assertNotNull(user,"数据库查询无数据");
+            System.out.println("测试通过");
 
-        System.out.println("预期:"+user+".实际:"+result);
-        Assert.assertNotNull(user);
-        //为什么int会为空,int应该从不会为空吧
-        Assert.assertNotNull(result);
+        } else {
+            throw new Exception("接口返回失败");
+        }
 
     }
 
     @Test(dependsOnGroups = "loginTrue",description = "删除用户")
-    public void deleteUser() throws IOException, InterruptedException {
+    public void deleteUser() throws Exception {
         System.out.println(TestConfig.updateUserInfoUrl);
         SqlSession session = MyBatisUtil.getSession();
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase",2);
@@ -58,17 +59,21 @@ public class UpdateUserInfoTest {
         //下边为写完接口的代码
         int result = getResult(updateUserInfoCase);
 
-        /**
-         * 下边这两行跟着测试的课讲
-         */
-        Thread.sleep(3000);
-        SqlSession session2 = MyBatisUtil.getSession();
-        User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
-        MyBatisUtil.close();
+        if (result==1){
+            Thread.sleep(4000);
+            //验证返回结果,查询用户看是否添加成功
+            SqlSession session2 = MyBatisUtil.getSession();
+            User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
+            MyBatisUtil.close();
+            System.out.println("预期:"+updateUserInfoCase+".实际:"+user);
+            //处理结果，就是判断返回结果是否符合预期
+            Assert.assertNotNull(user,"数据库查询无数据");
+            System.out.println("测试通过");
 
-        System.out.println("预期:"+user+".实际:"+result);
-        Assert.assertNotNull(user);
-        Assert.assertNotNull(result);
+        } else {
+            throw new Exception("接口返回失败");
+        }
+
     }
 
 
