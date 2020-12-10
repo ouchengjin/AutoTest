@@ -22,11 +22,12 @@ public class GetUserInfoTest {
 
     @Test(dependsOnGroups="loginTrue",description = "获取userId为1的用户信息")
     public void getUserInfo() throws IOException, InterruptedException {
+        System.out.println(TestConfig.getUserInfoUrl);
         SqlSession session = MyBatisUtil.getSession();
         GetUserInfoCase getUserInfoCase = session.selectOne("getUserInfoCase",1);
         MyBatisUtil.close();
         System.out.println(getUserInfoCase.toString());
-        System.out.println(TestConfig.getUserInfoUrl);
+
 
         //下边为写完接口的代码
         List<User> result = getJsonResult(getUserInfoCase);
@@ -38,8 +39,7 @@ public class GetUserInfoTest {
         SqlSession session2 = MyBatisUtil.getSession();
         List<User> userList = session2.selectList(getUserInfoCase.getExpected(), getUserInfoCase);
         MyBatisUtil.close();
-        System.out.println("自己查库获取用户信息:"+userList.toString());
-        System.out.println("调用接口获取用户信息:"+result.toString());
+        System.out.println("预期:"+userList+".实际:"+result);
         Assert.assertEquals(userList,result);
     }
 
@@ -61,7 +61,6 @@ public class GetUserInfoTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("调用接口result:"+result);
         List<User> users = JSON.parseArray(result, User.class);
         return users;
 

@@ -20,13 +20,11 @@ public class AddUserTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口接口")
     public void addUser() throws IOException, InterruptedException {
-
+        System.out.println(TestConfig.addUserUrl);
         SqlSession session = MyBatisUtil.getSession();
         AddUserCase addUserCase = (AddUserCase)session.selectOne("addUserCase",1);
         MyBatisUtil.close();
         System.out.println(addUserCase.toString());
-        System.out.println(TestConfig.addUserUrl);
-
 
         //发请求获取结果
         //下边的代码为写完接口的测试代码
@@ -45,6 +43,7 @@ public class AddUserTest {
 
 
         //处理结果，就是判断返回结果是否符合预期
+        System.out.println("预期:"+addUserCase.getExpected()+".实际:"+result);
         Assert.assertEquals(addUserCase.getExpected(),result);
 
 
@@ -74,7 +73,7 @@ public class AddUserTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result);
+        System.out.println("result:"+result);
         if(Integer.parseInt(result)>0){
             return "true";
         }else{

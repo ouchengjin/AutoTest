@@ -23,12 +23,12 @@ public class GetUserInfoListTest {
 
     @Test(dependsOnGroups="loginTrue",description = "获取性别为男的用户信息")
     public void getUserListInfo() throws IOException, InterruptedException {
-
+        System.out.println(TestConfig.getUserListUrl);
         SqlSession session = MyBatisUtil.getSession();
         GetUserListCase getUserListCase = session.selectOne("getUserListCase",1);
         MyBatisUtil.close();
         System.out.println(getUserListCase.toString());
-        System.out.println(TestConfig.getUserListUrl);
+
 
         //下边为写完接口的代码
         List<User> result = getJsonResult(getUserListCase);
@@ -41,6 +41,7 @@ public class GetUserInfoListTest {
         List<User> userList = session2.selectList(getUserListCase.getExpected(),getUserListCase);
         MyBatisUtil.close();
 
+        System.out.println("预期:"+result+".实际:"+userList);
         Assert.assertEquals(result,userList);
 
 

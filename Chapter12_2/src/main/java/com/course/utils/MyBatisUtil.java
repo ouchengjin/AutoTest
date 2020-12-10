@@ -24,13 +24,14 @@ public class MyBatisUtil {
 		if (tl.get() == null) {
 			tl.set(factory.openSession());
 		}
-		System.out.println("sucess");
+		System.out.println("获取session");
 		return tl.get();
 	}
 
 	public static void close() {
 		if (tl.get() != null) {
 			tl.get().close();
+			System.out.println("关闭session");
 			tl.remove();
 		}
 	}
