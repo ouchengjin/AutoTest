@@ -34,7 +34,7 @@ public class AddUserTest {
 
         if (result==1){//检测接口返回信息
             logger.info("接口返回:增加用户成功");
-            Thread.sleep(4000);
+            Thread.sleep(200000);
             //验证返回结果,查询用户看是否添加成功
             SqlSession session2 = MyBatisUtil.getSession();
             User user = (User)session2.selectOne("addUser",addUserCase);
