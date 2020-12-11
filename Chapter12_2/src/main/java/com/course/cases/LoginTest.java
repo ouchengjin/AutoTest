@@ -11,6 +11,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +20,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class LoginTest {
-
+    private Logger logger = Logger.getLogger(LoginTest.class);
 
     @BeforeTest(groups = "loginTrue",description = "测试准备工作,获取HttpClient对象")
     public void beforeTest(){
@@ -36,34 +37,32 @@ public class LoginTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
-        System.out.println(TestConfig.loginUrl);
+        logger.info(TestConfig.loginUrl);
         SqlSession session = MyBatisUtil.getSession();
         LoginCase loginCase = (LoginCase)session.selectOne("loginCase",1);
         MyBatisUtil.close();
 
-        System.out.println(loginCase.toString());
+        logger.info(loginCase.toString());
 
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
-        System.out.println("预期:"+loginCase.getExpected()+".实际:"+result);
+        logger.info("预期:"+loginCase.getExpected()+".实际:"+result);
         Assert.assertEquals(loginCase.getExpected(),result);
-
-
     }
 
     @Test(description = "用户登陆失败接口")
     public void loginFalse() throws IOException {
-        System.out.println(TestConfig.loginUrl);
+        logger.info(TestConfig.loginUrl);
         SqlSession session = MyBatisUtil.getSession();
         LoginCase loginCase = session.selectOne("loginCase",2);
         MyBatisUtil.close();
-        System.out.println(loginCase.toString());
+        logger.info(loginCase.toString());
 
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
-        System.out.println("预期:"+loginCase.getExpected()+".实际:"+result);
+        logger.info("预期:"+loginCase.getExpected()+".实际:"+result);
         Assert.assertEquals(loginCase.getExpected(),result);
 
     }

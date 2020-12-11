@@ -22,8 +22,11 @@
     <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="结束">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/AddUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/AddUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/GetUserInfoListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/GetUserInfoListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/GetUserInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/GetUserInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/UpdateUserInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/UpdateUserInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +142,8 @@
       <workItem from="1607347894969" duration="668000" />
       <workItem from="1607354409064" duration="669000" />
       <workItem from="1607428006269" duration="2616000" />
-      <workItem from="1607606567837" duration="6643000" />
+      <workItem from="1607606567837" duration="6862000" />
+      <workItem from="1607690378594" duration="4081000" />
     </task>
     <task id="LOCAL-00001" summary="13-2">
       <created>1606661298743</created>
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607608314566</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="结束">
+      <created>1607613232209</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607613232209</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,10 +315,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607354442365" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607608322382">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607613249426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607608322382" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607613249426" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1606916146787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

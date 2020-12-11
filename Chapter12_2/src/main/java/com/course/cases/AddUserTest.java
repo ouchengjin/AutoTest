@@ -19,36 +19,29 @@ import java.io.IOException;
 
 
 public class AddUserTest {
+    private Logger logger = Logger.getLogger(AddUserTest.class);
 
 
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口接口")
     public void addUser() throws Exception {
-        System.out.println(TestConfig.addUserUrl);
+        logger.info(TestConfig.addUserUrl);
         SqlSession session = MyBatisUtil.getSession();
         AddUserCase addUserCase = (AddUserCase)session.selectOne("addUserCase",1);
         MyBatisUtil.close();
-        System.out.println(addUserCase.toString());
-
+        logger.info(addUserCase.toString());
         //发请求获取结果
-        //下边的代码为写完接口的测试代码
         Integer result = getResult(addUserCase);
 
-        if (result==1){
+        if (result==1){//检测接口返回信息
+            logger.info("接口返回:增加用户成功");
             Thread.sleep(4000);
             //验证返回结果,查询用户看是否添加成功
             SqlSession session2 = MyBatisUtil.getSession();
             User user = (User)session2.selectOne("addUser",addUserCase);
             MyBatisUtil.close();
-            if (user==null){
-                throw new Exception("数据库查询无数据");
-            }
-            User user2= new User(user.getId(),addUserCase.getUserName(),addUserCase.getPassword(),
-                    addUserCase.getAge(),addUserCase.getSex(),addUserCase.getPermission(),addUserCase.getIsDelete());
-
-            //处理结果，就是判断返回结果是否符合预期
-            System.out.println("预期:"+user2+".实际:"+user);
-            Assert.assertEquals(user2,user);
-
+            //验证数据库是否成功插入数据
+            Assert.assertNotNull(user,"数据库查询无数据");
+            logger.info("成功插入数据:"+user);
         } else {
             throw new Exception("接口返回失败");
         }
@@ -61,7 +54,6 @@ public class AddUserTest {
 
 
     private Integer getResult(AddUserCase addUserCase) throws IOException {
-        Logger logger = Logger.getLogger(AddUserTest.class);
         //下边的代码为写完接口的测试代码
         HttpPost post = new HttpPost(TestConfig.addUserUrl);
         JSONObject param = new JSONObject();

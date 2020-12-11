@@ -10,6 +10,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,33 +19,25 @@ import java.io.IOException;
 import java.util.List;
 
 public class GetUserInfoListTest {
-
+    private Logger logger = Logger.getLogger(AddUserTest.class);
 
 
     @Test(dependsOnGroups="loginTrue",description = "获取性别为男的用户信息")
     public void getUserListInfo() throws IOException, InterruptedException {
-        System.out.println(TestConfig.getUserListUrl);
+        logger.info(TestConfig.getUserListUrl);
         SqlSession session = MyBatisUtil.getSession();
         GetUserListCase getUserListCase = session.selectOne("getUserListCase",1);
         MyBatisUtil.close();
-        System.out.println(getUserListCase.toString());
-
-
+        logger.info(getUserListCase.toString());
         //下边为写完接口的代码
         List<User> result = getJsonResult(getUserListCase);
-        /**
-         * 可以先讲
-         * 验证
-         */
+        //验证
         Thread.sleep(2000);
         SqlSession session2 = MyBatisUtil.getSession();
         List<User> userList = session2.selectList(getUserListCase.getExpected(),getUserListCase);
         MyBatisUtil.close();
-
-        System.out.println("预期:"+result+".实际:"+userList);
+        logger.info("预期:"+result+".实际:"+userList);
         Assert.assertEquals(result,userList);
-
-
     }
 
     private List<User> getJsonResult(GetUserListCase getUserListCase) throws IOException {
@@ -67,7 +60,6 @@ public class GetUserInfoListTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         List<User> userList = JSON.parseArray(result, User.class);
-
         return userList;
 
     }

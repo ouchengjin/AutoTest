@@ -10,6 +10,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,17 +18,15 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class UpdateUserInfoTest {
-
+    private Logger logger = Logger.getLogger(LoginTest.class);
     @Test(dependsOnGroups = "loginTrue",description = "更改用户信息")
     public void updateUserInfo() throws Exception {
-        System.out.println(TestConfig.updateUserInfoUrl);
+        logger.info(TestConfig.updateUserInfoUrl);
         SqlSession session = MyBatisUtil.getSession();
         UpdateUserInfoCase updateUserInfoCase = (UpdateUserInfoCase)session.selectOne("updateUserInfoCase",1);
         MyBatisUtil.close();
-        System.out.println(updateUserInfoCase.toString());
-
-
-        //下边为写完接口的代码
+        logger.info(updateUserInfoCase.toString());
+        //访问接口
         int result = getResult(updateUserInfoCase);
         if (result==1){
             Thread.sleep(4000);
@@ -35,11 +34,10 @@ public class UpdateUserInfoTest {
             SqlSession session2 = MyBatisUtil.getSession();
             User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
             MyBatisUtil.close();
-            System.out.println("预期:"+updateUserInfoCase+".实际:"+user);
+            logger.info("预期:"+updateUserInfoCase+".实际:"+user);
             //处理结果，就是判断返回结果是否符合预期
             Assert.assertNotNull(user,"数据库查询无数据");
-            System.out.println("测试通过");
-
+            logger.info("测试通过");
         } else {
             throw new Exception("接口返回失败");
         }
@@ -48,11 +46,11 @@ public class UpdateUserInfoTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "删除用户")
     public void deleteUser() throws Exception {
-        System.out.println(TestConfig.updateUserInfoUrl);
+        logger.info(TestConfig.updateUserInfoUrl);
         SqlSession session = MyBatisUtil.getSession();
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase",2);
         MyBatisUtil.close();
-        System.out.println(updateUserInfoCase.toString());
+        logger.info(updateUserInfoCase.toString());
 
 
 
@@ -65,10 +63,10 @@ public class UpdateUserInfoTest {
             SqlSession session2 = MyBatisUtil.getSession();
             User user = session2.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
             MyBatisUtil.close();
-            System.out.println("预期:"+updateUserInfoCase+".实际:"+user);
+            logger.info("预期:"+updateUserInfoCase+".实际:"+user);
             //处理结果，就是判断返回结果是否符合预期
             Assert.assertNotNull(user,"数据库查询无数据");
-            System.out.println("测试通过");
+            logger.info("测试通过");
 
         } else {
             throw new Exception("接口返回失败");
