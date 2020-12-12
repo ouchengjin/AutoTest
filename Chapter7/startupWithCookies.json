@@ -1,8 +1,26 @@
 [
+
+  {
+    "description": "这是一个请求cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜你获得了cookies信息",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+
   {
     "description": "这是一个带cookies的请求报文",
     "request": {
-      "uri": "/get/withcookies",
+      "uri": "/get/withCookies",
       "method": "get",
       "cookies": {
         "login": "true"
@@ -19,7 +37,7 @@
   {
     "description": "这是带cookies带参数的post请求",
     "request": {
-      "uri": "/post/param/cookies",
+      "uri": "/post/with/cookiesandparam",
       "method": "post",
       "cookies": {
         "login": "true"
