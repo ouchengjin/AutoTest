@@ -22,6 +22,9 @@ import java.io.IOException;
 public class LoginTest {
     private Logger logger = Logger.getLogger(LoginTest.class);
 
+    /**
+     * 在xml配置文件的test标签运行前执行
+     */
     @BeforeTest(groups = "loginTrue",description = "测试准备工作,获取HttpClient对象")
     public void beforeTest(){
         TestConfig.defaultHttpClient = new DefaultHttpClient();
@@ -31,8 +34,6 @@ public class LoginTest {
         TestConfig.updateUserInfoUrl = ConfigFileUtil.getUrl(InterfaceName.UPDATEUSERINFO);
         TestConfig.addUserUrl = ConfigFileUtil.getUrl(InterfaceName.ADDUSER);
     }
-
-
 
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
