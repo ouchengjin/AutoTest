@@ -20,18 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="结束">
+      <change afterPath="$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/multiThread/MultiThreadOnXml2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter5/target/classes/com/course/testng/multiThread/MultiThreadOnXml2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/AddUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/AddUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/UpdateUserInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/UpdateUserInfoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/utils/MyBatisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/utils/MyBatisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/userManager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/userManager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/multiThread/MultiThreadOnXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/multiThread/MultiThreadOnXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/MultiThreadOnXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/MultiThreadOnXml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5/target/classes/com/course/testng/multiThread/MultiThreadOnXml.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/target/classes/com/course/testng/multiThread/MultiThreadOnXml.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.course.testng.multiThread" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\java\com\course\utils" />
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\src\main\java\com\course\utils" />
@@ -79,23 +77,7 @@
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Ignore">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.course.Application" />
-      <module name="Chapter13" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Chapter/Chapter12_2/test-output/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.TimeOutTest">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Chapter13" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
@@ -103,9 +85,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12_2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter12_2/src/main/resources/testng.xml" />
+    <configuration name="C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter5/src/main/resources/MultiThreadOnXml.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter5" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -113,17 +95,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ignore" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter5/src/main/resources/paramter.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter5" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter5/src/main/resources/paramter.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataProviderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Chapter5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.course.testng.ignore.*" />
+          <option name="PATTERN" value="com.course.testng.dataprovidertest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.course.testng.ignore" />
-      <option name="MAIN_CLASS_NAME" value="com.course.testng.ignore.Ignore" />
+      <option name="PACKAGE_NAME" value="com.course.testng.dataprovidertest" />
+      <option name="MAIN_CLASS_NAME" value="com.course.testng.dataprovidertest.DataProviderTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.testng.timeout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.testng.timeout" />
+      <option name="MAIN_CLASS_NAME" value="com.course.testng.timeout.TimeOutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeOutTest.timeOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.testng.timeout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.testng.timeout" />
+      <option name="MAIN_CLASS_NAME" value="com.course.testng.timeout.TimeOutTest" />
+      <option name="METHOD_NAME" value="timeOutTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,10 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Ignore" />
-        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="TestNG.TimeOutTest" />
+        <item itemvalue="TestNG.TimeOutTest.timeOutTest" />
+        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter5/src/main/resources/MultiThreadOnXml.xml" />
+        <item itemvalue="TestNG.DataProviderTest" />
+        <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter5/src/main/resources/paramter.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +196,8 @@
       <workItem from="1607606567837" duration="6862000" />
       <workItem from="1607690378594" duration="6784000" />
       <workItem from="1607699077269" duration="109000" />
-      <workItem from="1607774413607" duration="2083000" />
+      <workItem from="1607774413607" duration="2245000" />
+      <workItem from="1607840841335" duration="13493000" />
     </task>
     <task id="LOCAL-00001" summary="13-2">
       <created>1606661298743</created>
@@ -275,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607699158075</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="结束">
+      <created>1607784598360</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607784598360</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,38 +352,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="334" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1606916229080" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1607784150491">
+    <state width="1493" height="359" key="GridCell.Tab.0.bottom" timestamp="1607858585225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607784150491" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1607784150491">
+    <state width="1493" height="359" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607858585225" />
+    <state width="1493" height="359" key="GridCell.Tab.0.center" timestamp="1607858585225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607784150491" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1607784150491">
+    <state width="1493" height="359" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607858585225" />
+    <state width="1493" height="359" key="GridCell.Tab.0.left" timestamp="1607858585224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607784150491" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1607784150491">
+    <state width="1493" height="359" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607858585224" />
+    <state width="1493" height="359" key="GridCell.Tab.0.right" timestamp="1607858585225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607784150491" />
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1607774712990">
+    <state width="1493" height="359" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607858585225" />
+    <state width="1493" height="224" key="GridCell.Tab.1.bottom" timestamp="1607784682865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607774712990" />
-    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1607774712990">
+    <state width="1493" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
+    <state width="1493" height="224" key="GridCell.Tab.1.center" timestamp="1607784682865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607774712990" />
-    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1607774712990">
+    <state width="1493" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
+    <state width="1493" height="224" key="GridCell.Tab.1.left" timestamp="1607784682865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607774712990" />
-    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1607774712990">
+    <state width="1493" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
+    <state width="1493" height="224" key="GridCell.Tab.1.right" timestamp="1607784682865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607774712990" />
+    <state width="1493" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
     <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1606923895457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -368,10 +404,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607354442365" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607699166439">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607784620783">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607699166439" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607784620783" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1606916146787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

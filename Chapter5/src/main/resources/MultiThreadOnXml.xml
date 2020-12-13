@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="thread" parallel="classes" thread-count="4">
+<suite name="thread" parallel="tests" thread-count="4">
     <!--
+    以下描述针对的是本xml文件
         tests级别
             不同的test tag下的用例可以在不同的线程下去执行
             相同的test tag下的用例只能在同一线程中去执行.
@@ -15,11 +16,12 @@
     <test name="demo1">
         <classes >
             <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml2"/>
         </classes>
     </test>
-    <test name="demo2">
+    <!--<test name="demo2">
         <classes >
             <class name="com.course.testng.multiThread.MultiThreadOnXml"/>
         </classes>
-    </test>
+    </test>-->
 </suite>
