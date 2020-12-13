@@ -1,0 +1,10 @@
+0    [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+501  [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+528  [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 1(Integer)
+552  [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+553  [main] INFO  com.course.cases.LoginTest  - LoginCase(id=1, userName=zhangsan, password=123456, expected=true)
+5054 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+5055 [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+5055 [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 2(Integer)
+5056 [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+5056 [main] INFO  com.course.cases.LoginTest  - LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)
