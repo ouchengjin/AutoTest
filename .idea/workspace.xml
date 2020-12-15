@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="维护" />
+    <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="维护">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/userManager.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +77,13 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Chapter10" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Chapter13" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
@@ -91,23 +105,6 @@
       <module name="Chapter5" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter5/src/main/resources/MultiThreadOnXml.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataProviderTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.testng.dataprovidertest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.testng.dataprovidertest" />
-      <option name="MAIN_CLASS_NAME" value="com.course.testng.dataprovidertest.DataProviderTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml" />
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="TestNG.TimeOutTest" />
         <item itemvalue="TestNG.TimeOutTest.timeOutTest" />
         <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter5/src/main/resources/MultiThreadOnXml.xml" />
-        <item itemvalue="TestNG.DataProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +187,7 @@
       <workItem from="1607699077269" duration="109000" />
       <workItem from="1607774413607" duration="2245000" />
       <workItem from="1607840841335" duration="14324000" />
+      <workItem from="1608032850532" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="13-2">
       <created>1606661298743</created>
@@ -317,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607864839457</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="维护">
+      <created>1608032877331</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608032877331</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,38 +364,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="334" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1606916229080" />
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1607864898344">
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1608043578810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607864898344" />
-    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1607864898344">
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608043578810" />
+    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1608043578810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607864898344" />
-    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1607864898344">
+    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608043578810" />
+    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1608043578810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607864898344" />
-    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1607864898344">
+    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608043578810" />
+    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1608043578810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607864898344" />
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom" timestamp="1607784682865">
+    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608043578810" />
+    <state width="1493" height="183" key="GridCell.Tab.1.bottom" timestamp="1608043578811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
-    <state width="1493" height="224" key="GridCell.Tab.1.center" timestamp="1607784682865">
+    <state width="1493" height="183" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608043578811" />
+    <state width="1493" height="183" key="GridCell.Tab.1.center" timestamp="1608043578811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
-    <state width="1493" height="224" key="GridCell.Tab.1.left" timestamp="1607784682865">
+    <state width="1493" height="183" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608043578811" />
+    <state width="1493" height="183" key="GridCell.Tab.1.left" timestamp="1608043578811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
-    <state width="1493" height="224" key="GridCell.Tab.1.right" timestamp="1607784682865">
+    <state width="1493" height="183" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608043578811" />
+    <state width="1493" height="183" key="GridCell.Tab.1.right" timestamp="1608043578811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607784682865" />
+    <state width="1493" height="183" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608043578811" />
     <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1606923895457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -411,10 +416,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607354442365" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607864894962">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608032890478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607864894962" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608032890478" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1606916146787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
