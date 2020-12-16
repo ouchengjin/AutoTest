@@ -126,3 +126,121 @@
 19469 [main] DEBUG SQLMapper.getUserList  - ==> Parameters: 
 19473 [main] DEBUG SQLMapper.getUserList  - <==      Total: 12
 19474 [main] INFO  com.course.cases.AddUserTest  - 预期:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)].实际:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+1    [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+502  [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+529  [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 1(Integer)
+546  [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+547  [main] INFO  com.course.cases.LoginTest  - LoginCase(id=1, userName=zhangsan, password=123456, expected=true)
+1387 [main] INFO  com.course.cases.LoginTest  - 预期:true.实际:true
+1389 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+1392 [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+1392 [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 2(Integer)
+1393 [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+1393 [main] INFO  com.course.cases.LoginTest  - LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)
+1401 [main] INFO  com.course.cases.LoginTest  - 预期:false.实际:false
+1403 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/addUser
+1404 [main] DEBUG SQLMapper.addUserCase  - ==>  Preparing: select * from addUserCase where id=? 
+1404 [main] DEBUG SQLMapper.addUserCase  - ==> Parameters: 1(Integer)
+1406 [main] DEBUG SQLMapper.addUserCase  - <==      Total: 1
+1406 [main] INFO  com.course.cases.AddUserTest  - AddUserCase(id=1, userName=zhao9, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=true)
+1418 [main] INFO  com.course.cases.AddUserTest  - 接口返回:增加用户成功
+4419 [main] DEBUG SQLMapper.addUser  - ==>  Preparing: select * from user where userName=? and password=? and sex=? and age=? and permission=? and isDelete=? 
+4419 [main] DEBUG SQLMapper.addUser  - ==> Parameters: zhao9(String), zhaozhao(String), 0(Integer), 35(Integer), 1(Integer), 0(Integer)
+4421 [main] DEBUG SQLMapper.addUser  - <==      Total: 6
+4425 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/getUserInfo
+4425 [main] DEBUG SQLMapper.getUserInfoCase  - ==>  Preparing: select * from getUserInfoCase where id=? 
+4425 [main] DEBUG SQLMapper.getUserInfoCase  - ==> Parameters: 1(Integer)
+4426 [main] DEBUG SQLMapper.getUserInfoCase  - <==      Total: 1
+4426 [main] INFO  com.course.cases.AddUserTest  - GetUserInfoCase(id=1, userId=1, expected=getUserInfo)
+8530 [main] DEBUG SQLMapper.getUserInfo  - ==>  Preparing: select * from user where id=? 
+8530 [main] DEBUG SQLMapper.getUserInfo  - ==> Parameters: 1(Integer)
+8531 [main] DEBUG SQLMapper.getUserInfo  - <==      Total: 1
+8532 [main] INFO  com.course.cases.AddUserTest  - 预期:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)].实际:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+8532 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/updateUserInfo
+8533 [main] DEBUG SQLMapper.updateUserInfoCase  - ==>  Preparing: select * from updateUserInfoCase where id = ? 
+8533 [main] DEBUG SQLMapper.updateUserInfoCase  - ==> Parameters: 1(Integer)
+8534 [main] DEBUG SQLMapper.updateUserInfoCase  - <==      Total: 1
+8535 [main] INFO  com.course.cases.LoginTest  - UpdateUserInfoCase(id=1, userId=2, userName=hahahaha, sex=null, age=null, permission=null, isDelete=null, expected=getUpdateUserInfo)
+12568 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==>  Preparing: select * from user WHERE userName=? And id = ? 
+12568 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==> Parameters: hahahaha(String), 2(Integer)
+12569 [main] DEBUG SQLMapper.getUpdateUserInfo  - <==      Total: 1
+12570 [main] INFO  com.course.cases.LoginTest  - 预期:UpdateUserInfoCase(id=1, userId=2, userName=hahahaha, sex=null, age=null, permission=null, isDelete=null, expected=getUpdateUserInfo).实际:User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0)
+12570 [main] INFO  com.course.cases.LoginTest  - 测试通过
+12570 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/updateUserInfo
+12571 [main] DEBUG SQLMapper.updateUserInfoCase  - ==>  Preparing: select * from updateUserInfoCase where id = ? 
+12571 [main] DEBUG SQLMapper.updateUserInfoCase  - ==> Parameters: 2(Integer)
+12572 [main] DEBUG SQLMapper.updateUserInfoCase  - <==      Total: 1
+12573 [main] INFO  com.course.cases.LoginTest  - UpdateUserInfoCase(id=2, userId=7, userName=null, sex=null, age=null, permission=null, isDelete=1, expected=getUpdateUserInfo)
+16584 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==>  Preparing: select * from user WHERE isDelete=? And id = ? 
+16584 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==> Parameters: 1(Integer), 7(Integer)
+16585 [main] DEBUG SQLMapper.getUpdateUserInfo  - <==      Total: 1
+16585 [main] INFO  com.course.cases.LoginTest  - 预期:UpdateUserInfoCase(id=2, userId=7, userName=null, sex=null, age=null, permission=null, isDelete=1, expected=getUpdateUserInfo).实际:User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1)
+16585 [main] INFO  com.course.cases.LoginTest  - 测试通过
+16586 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/getUserInfo
+16586 [main] DEBUG SQLMapper.getUserListCase  - ==>  Preparing: select * from getUserListCase where id=? 
+16586 [main] DEBUG SQLMapper.getUserListCase  - ==> Parameters: 1(Integer)
+16587 [main] DEBUG SQLMapper.getUserListCase  - <==      Total: 1
+16588 [main] INFO  com.course.cases.AddUserTest  - GetUserListCase(id=1, userName=null, age=null, sex=0, expected=getUserList)
+18598 [main] DEBUG SQLMapper.getUserList  - ==>  Preparing: select * from user 
+18598 [main] DEBUG SQLMapper.getUserList  - ==> Parameters: 
+18601 [main] DEBUG SQLMapper.getUserList  - <==      Total: 13
+18602 [main] INFO  com.course.cases.AddUserTest  - 预期:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=171, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)].实际:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=171, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
+0    [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+423  [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+448  [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 1(Integer)
+465  [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+466  [main] INFO  com.course.cases.LoginTest  - LoginCase(id=1, userName=zhangsan, password=123456, expected=true)
+1004 [main] INFO  com.course.cases.LoginTest  - 预期:true.实际:true
+1006 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/login
+1006 [main] DEBUG SQLMapper.loginCase  - ==>  Preparing: select * from loginCase where id = ? 
+1006 [main] DEBUG SQLMapper.loginCase  - ==> Parameters: 2(Integer)
+1007 [main] DEBUG SQLMapper.loginCase  - <==      Total: 1
+1008 [main] INFO  com.course.cases.LoginTest  - LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)
+1012 [main] INFO  com.course.cases.LoginTest  - 预期:false.实际:false
+1014 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/addUser
+1014 [main] DEBUG SQLMapper.addUserCase  - ==>  Preparing: select * from addUserCase where id=? 
+1015 [main] DEBUG SQLMapper.addUserCase  - ==> Parameters: 1(Integer)
+1016 [main] DEBUG SQLMapper.addUserCase  - <==      Total: 1
+1016 [main] INFO  com.course.cases.AddUserTest  - AddUserCase(id=1, userName=zhao9, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=true)
+1022 [main] INFO  com.course.cases.AddUserTest  - 接口返回:增加用户成功
+4023 [main] DEBUG SQLMapper.addUser  - ==>  Preparing: select * from user where userName=? and password=? and sex=? and age=? and permission=? and isDelete=? 
+4023 [main] DEBUG SQLMapper.addUser  - ==> Parameters: zhao9(String), zhaozhao(String), 0(Integer), 35(Integer), 1(Integer), 0(Integer)
+4025 [main] DEBUG SQLMapper.addUser  - <==      Total: 7
+4028 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/getUserInfo
+4028 [main] DEBUG SQLMapper.getUserInfoCase  - ==>  Preparing: select * from getUserInfoCase where id=? 
+4029 [main] DEBUG SQLMapper.getUserInfoCase  - ==> Parameters: 1(Integer)
+4030 [main] DEBUG SQLMapper.getUserInfoCase  - <==      Total: 1
+4030 [main] INFO  com.course.cases.AddUserTest  - GetUserInfoCase(id=1, userId=1, expected=getUserInfo)
+8098 [main] DEBUG SQLMapper.getUserInfo  - ==>  Preparing: select * from user where id=? 
+8098 [main] DEBUG SQLMapper.getUserInfo  - ==> Parameters: 1(Integer)
+8099 [main] DEBUG SQLMapper.getUserInfo  - <==      Total: 1
+8099 [main] INFO  com.course.cases.AddUserTest  - 预期:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)].实际:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0)]
+8100 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/updateUserInfo
+8100 [main] DEBUG SQLMapper.updateUserInfoCase  - ==>  Preparing: select * from updateUserInfoCase where id = ? 
+8101 [main] DEBUG SQLMapper.updateUserInfoCase  - ==> Parameters: 1(Integer)
+8101 [main] DEBUG SQLMapper.updateUserInfoCase  - <==      Total: 1
+8102 [main] INFO  com.course.cases.LoginTest  - UpdateUserInfoCase(id=1, userId=2, userName=hahahaha, sex=null, age=null, permission=null, isDelete=null, expected=getUpdateUserInfo)
+12130 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==>  Preparing: select * from user WHERE userName=? And id = ? 
+12131 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==> Parameters: hahahaha(String), 2(Integer)
+12131 [main] DEBUG SQLMapper.getUpdateUserInfo  - <==      Total: 1
+12132 [main] INFO  com.course.cases.LoginTest  - 预期:UpdateUserInfoCase(id=1, userId=2, userName=hahahaha, sex=null, age=null, permission=null, isDelete=null, expected=getUpdateUserInfo).实际:User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0)
+12132 [main] INFO  com.course.cases.LoginTest  - 测试通过
+12133 [main] INFO  com.course.cases.LoginTest  - http://localhost:8888/v1/updateUserInfo
+12133 [main] DEBUG SQLMapper.updateUserInfoCase  - ==>  Preparing: select * from updateUserInfoCase where id = ? 
+12133 [main] DEBUG SQLMapper.updateUserInfoCase  - ==> Parameters: 2(Integer)
+12134 [main] DEBUG SQLMapper.updateUserInfoCase  - <==      Total: 1
+12135 [main] INFO  com.course.cases.LoginTest  - UpdateUserInfoCase(id=2, userId=7, userName=null, sex=null, age=null, permission=null, isDelete=1, expected=getUpdateUserInfo)
+16141 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==>  Preparing: select * from user WHERE isDelete=? And id = ? 
+16141 [main] DEBUG SQLMapper.getUpdateUserInfo  - ==> Parameters: 1(Integer), 7(Integer)
+16142 [main] DEBUG SQLMapper.getUpdateUserInfo  - <==      Total: 1
+16142 [main] INFO  com.course.cases.LoginTest  - 预期:UpdateUserInfoCase(id=2, userId=7, userName=null, sex=null, age=null, permission=null, isDelete=1, expected=getUpdateUserInfo).实际:User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1)
+16142 [main] INFO  com.course.cases.LoginTest  - 测试通过
+16143 [main] INFO  com.course.cases.AddUserTest  - http://localhost:8888/v1/getUserInfo
+16143 [main] DEBUG SQLMapper.getUserListCase  - ==>  Preparing: select * from getUserListCase where id=? 
+16143 [main] DEBUG SQLMapper.getUserListCase  - ==> Parameters: 1(Integer)
+16144 [main] DEBUG SQLMapper.getUserListCase  - <==      Total: 1
+16144 [main] INFO  com.course.cases.AddUserTest  - GetUserListCase(id=1, userName=null, age=null, sex=0, expected=getUserList)
+18154 [main] DEBUG SQLMapper.getUserList  - ==>  Preparing: select * from user 
+18154 [main] DEBUG SQLMapper.getUserList  - ==> Parameters: 
+18157 [main] DEBUG SQLMapper.getUserList  - <==      Total: 14
+18158 [main] INFO  com.course.cases.AddUserTest  - 预期:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=171, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=172, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)].实际:[User(id=1, userName=zhangsan, password=123456, age=20, sex=0, permission=0, isDelete=0), User(id=2, userName=hahahaha, password=123456, age=25, sex=1, permission=1, isDelete=0), User(id=3, userName=wangwu, password=123456, age=30, sex=0, permission=1, isDelete=0), User(id=4, userName=zhaoliu, password=123456, age=40, sex=1, permission=1, isDelete=0), User(id=5, userName=zhang1, password=1231, age=20, sex=0, permission=0, isDelete=0), User(id=6, userName=zhao2, password=wqer, age=30, sex=1, permission=1, isDelete=0), User(id=7, userName=li3, password=sdffa, age=50, sex=1, permission=0, isDelete=1), User(id=166, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=167, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=168, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=169, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=170, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=171, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0), User(id=172, userName=zhao9, password=zhaozhao, age=35, sex=0, permission=1, isDelete=0)]
