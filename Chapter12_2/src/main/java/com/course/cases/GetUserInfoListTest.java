@@ -1,6 +1,7 @@
 package com.course.cases;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
 import com.course.model.GetUserListCase;
 import com.course.model.User;
@@ -11,7 +12,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+//import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

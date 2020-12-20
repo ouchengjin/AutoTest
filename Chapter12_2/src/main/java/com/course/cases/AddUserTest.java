@@ -10,7 +10,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+//import org.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
