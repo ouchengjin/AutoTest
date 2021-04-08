@@ -14,6 +14,7 @@
         <module name="Chapter12_2" />
         <module name="Chapter6" />
         <module name="Chapter5" />
+        <module name="excel2javabean" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="6" />
       <module name="Chapter9" target="1.8" />
+      <module name="excel2javabean" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,6 +39,7 @@
       <module name="Chapter13" options="-parameters -extdirs C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13/lib" />
       <module name="Chapter6" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
+      <module name="excel2javabean" options="-parameters" />
     </option>
   </component>
 </project>
