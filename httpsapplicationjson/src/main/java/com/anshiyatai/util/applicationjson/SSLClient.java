@@ -66,8 +66,8 @@ public class SSLClient extends DefaultHttpClient {
             httpPost.addHeader("Accept", "application/json");
             httpPost.addHeader("Content-Type", "application/json;charset=UTF-8");
             StringEntity stringEntity = new StringEntity(json);
-            stringEntity.setContentEncoding("UTF-8");
-            stringEntity.setContentType("application/json");
+            /*stringEntity.setContentEncoding("UTF-8");
+            stringEntity.setContentType("application/json");*/
             httpPost.setEntity(stringEntity);
             HttpResponse response = httpClient.execute(httpPost);
             if (response != null) {
