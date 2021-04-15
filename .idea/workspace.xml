@@ -19,22 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="维护">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel2javabean/excel2javabean.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel2javabean/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel2javabean/src/main/java/ReadExcel.java" afterDir="false" />
+    <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="解析excel">
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/cases/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/cases/LoginTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/HttpsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/applicationjson/SSLClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/AddUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/cases/AddUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/event.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log.2020-11-18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log.2020-11-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log.2020-11-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log.2020-11-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/mylog.log.2020-12-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/event.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-11-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2020-12-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log.2021-01-12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +87,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/Chapter12_2/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/excel2javabean/src/main/java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/httpsapplicationjson/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,19 +102,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\resources" />
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\java" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\java\com\course\utils" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\src\main\java\com\course\utils" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\resources" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\java\com\course" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.course.testng.multiThread" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\httpsapplicationjson\src\main\java" />
+      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\httpsapplicationjson\src\main\resources" />
       <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\java" />
+      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter12_2\src\main\java\com\course\utils" />
+      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\Chapter13\src\main\java\com\course\utils" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -102,7 +122,7 @@
       <command value="mvn dependency:copy-dependencies -DoutputDirectory=lib " />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReadExcel">
+  <component name="RunManager" selected="TestNG.LoginTest2.HttpsPostTest">
     <configuration name="People" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pojo.People" />
       <module name="excel2javabean" />
@@ -119,19 +139,6 @@
     <configuration name="ReadExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ReadExcel" />
       <module name="excel2javabean" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Chapter11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,18 +160,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12_2" />
+    <configuration name="LoginTest2.HttpsPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="httpsapplicationjson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
+          <option name="PATTERN" value="com.anshiyatai.cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Chapter12_2/src/main/resources/testng.xml" />
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.GetUserInfoTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.anshiyatai.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.anshiyatai.cases.LoginTest2" />
+      <option name="METHOD_NAME" value="HttpsPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="httpsapplicationjson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anshiyatai.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anshiyatai.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.anshiyatai.cases.LoginTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -173,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest2.HttpsPostTest" />
+        <item itemvalue="TestNG.LoginTest.login" />
         <item itemvalue="Application.ReadExcel" />
         <item itemvalue="Application.People" />
         <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.GetUserInfoTest" />
-        <item itemvalue="Spring Boot.Application (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +261,13 @@
       <workItem from="1617068996046" duration="6240000" />
       <workItem from="1617887671170" duration="2194000" />
       <workItem from="1617891114512" duration="1605000" />
-      <workItem from="1617892935082" duration="245000" />
+      <workItem from="1617892935082" duration="743000" />
+      <workItem from="1617893856344" duration="416000" />
+      <workItem from="1618024289279" duration="2085000" />
+      <workItem from="1618028314410" duration="564000" />
+      <workItem from="1618149392033" duration="362000" />
+      <workItem from="1618149793394" duration="9000" />
+      <workItem from="1618492835757" duration="6850000" />
     </task>
     <task id="LOCAL-00001" summary="13-2">
       <created>1606661298743</created>
@@ -420,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614780674236</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="解析excel">
+      <created>1617893313718</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1617893313718</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,56 +485,80 @@
     <MESSAGE value="14-2" />
     <MESSAGE value="结束" />
     <MESSAGE value="维护" />
-    <option name="LAST_COMMIT_MESSAGE" value="维护" />
+    <MESSAGE value="解析excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="解析excel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1617890328044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1617890328044" />
-    <state width="1493" height="372" key="GridCell.Tab.0.bottom" timestamp="1617893179190">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618496296059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617893179190" />
-    <state width="1493" height="372" key="GridCell.Tab.0.center" timestamp="1617893179189">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618496296059" />
+    <state width="1493" height="333" key="GridCell.Tab.0.bottom" timestamp="1618499553148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617893179189" />
-    <state width="1493" height="372" key="GridCell.Tab.0.left" timestamp="1617893179189">
+    <state width="1493" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618499553148" />
+    <state width="1493" height="333" key="GridCell.Tab.0.center" timestamp="1618499553148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617893179189" />
-    <state width="1493" height="372" key="GridCell.Tab.0.right" timestamp="1617893179189">
+    <state width="1493" height="333" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618499553148" />
+    <state width="1493" height="333" key="GridCell.Tab.0.left" timestamp="1618499553148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617893179189" />
-    <state width="1493" height="372" key="GridCell.Tab.1.bottom" timestamp="1614780916534">
+    <state width="1493" height="333" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618499553148" />
+    <state width="1493" height="333" key="GridCell.Tab.0.right" timestamp="1618499553148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614780916534" />
-    <state width="1493" height="372" key="GridCell.Tab.1.center" timestamp="1614780916534">
+    <state width="1493" height="333" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618499553148" />
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1618497354089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1614780916534" />
-    <state width="1493" height="372" key="GridCell.Tab.1.left" timestamp="1614780916534">
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618497354089" />
+    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1618497354089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1614780916534" />
-    <state width="1493" height="372" key="GridCell.Tab.1.right" timestamp="1614780916534">
+    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618497354089" />
+    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1618497354089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1614780916534" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1609667400667">
+    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618497354089" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1618497354089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1609667400667" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1614780681434">
+    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618497354089" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1618497259771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614780681434" />
-    <state x="90" y="46" key="new project wizard" timestamp="1617889970484">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1618497259771" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617893329656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="90" y="46" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1617889970484" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617893329656" />
+    <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1618493670944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1618493670944" />
+    <state x="190" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618494335632">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="190" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1618494335632" />
+    <state x="90" y="46" key="new project wizard" timestamp="1618492973925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="90" y="46" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1618492973925" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/HttpsUtil.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
