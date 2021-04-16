@@ -47,10 +47,10 @@ public class HttpsUtil {
                         headerParameters.get(key));
             }
         }
-        /*httpConnection.setRequestProperty("Content-Type",
-                "application/x-www-form-urlencoded;charset=" + ENCODING);*/
         httpConnection.setRequestProperty("Content-Type",
-                "application/json;charset=" + ENCODING);
+                "application/x-www-form-urlencoded;charset=" + ENCODING);
+        /*httpConnection.setRequestProperty("Content-Type",
+                "application/json;charset=" + ENCODING);*/
 
         // 设置请求方法
         httpConnection.setRequestMethod(method);

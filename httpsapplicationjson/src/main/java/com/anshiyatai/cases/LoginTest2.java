@@ -1,7 +1,9 @@
 package com.anshiyatai.cases;
 
 import com.alibaba.fastjson.JSONObject;
+import com.anshiyatai.config.TestConfig;
 import com.anshiyatai.util.applicationjson.SSLClient;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.cookie.Cookie;
@@ -24,8 +26,39 @@ public class LoginTest2 {
     }
 
 
+    /**
+     * 暂时不用
+     * @throws Exception
+     */
     @Test
-    public void HttpsPostTest() throws Exception {
+    public void HttpsPostMapTest() throws Exception {
+        String senceCode = "200";
+        String username = "15011252382";
+        String password = "123456";
+        Map<String,String> params= new HashMap<>();
+
+        params.put("senceCode", senceCode);
+        params.put("username", username);
+        params.put("password", "JAa/f%2BWjuWRSUTHoPoIoksPvzACrlqAOhY9CoLUPKZjiV5Pf9c2Jyj8H49sbnRa7UBNtdXKhPfCnP5GsMxQ3Ml%2BbCmGo51lPutK3sVxqDAK4qiRiofmwIdVlYlIpfTZPUTNowdDEod6IdcOdN8MAhRYGEQ55pHptaRNdrgC/7H8=");
+
+        String encryptStr = params.toString();
+        System.out.println("encryptStr：" + encryptStr);
+        String httpOrgCreateTestRtn = httpClientUtil.doPostMap(url, params, charset);
+        CookieStore cookieStore1 = httpClientUtil.getCookieStore();
+        List<Cookie> cookies = cookieStore1.getCookies();
+        if (cookies.isEmpty()){
+            System.out.println("没有cookies返回");
+        }
+        for(Cookie cookie:cookies){
+            System.out.println(cookie.getName()+":"+cookie.getValue());
+        }
+
+        System.out.println("result:" + httpOrgCreateTestRtn);
+
+    }
+
+    @Test
+    public void HttpsPostJsonTest() throws Exception {
         int senceCode = 200;
         String username = "15011252382";
         String password = "123456";
@@ -42,17 +75,19 @@ public class LoginTest2 {
 
         String encryptStr = params.toString();
         System.out.println("encryptStr：" + encryptStr);
-        String httpOrgCreateTestRtn = httpClientUtil.doPostJson(url, encryptStr, charset);
-        CookieStore cookieStore1 = httpClientUtil.getCookieStore();
-        List<Cookie> cookies = cookieStore1.getCookies();
+        String result = httpClientUtil.doPostJson(url, encryptStr, charset);
+
+        List<Cookie> cookies = TestConfig.store.getCookies();
         if (cookies.isEmpty()){
             System.out.println("没有cookies返回");
+        }else {
+            for(Cookie cookie:cookies){
+                System.out.println(cookie.getName()+":"+cookie.getValue());
+            }
         }
-        for(Cookie cookie:cookies){
-            System.out.println(cookie.getName()+":"+cookie.getValue());
-        }
+        System.out.println("result:"+result);
 
-        System.out.println("result:" + httpOrgCreateTestRtn);
+
 
     }
     public static String md5(String text) {
