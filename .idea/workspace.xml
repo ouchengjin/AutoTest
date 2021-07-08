@@ -19,69 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd86eea3-a3e2-43bd-82d6-688e0a4b011a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/userManager.log.2021-04-16" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/AnshiyataiInterfaceAutoTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/AddUserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/UpdateUserInfoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/ExtentTestNGIReporterListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/TestConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/AddUserCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserInfoCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserListCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/InterfaceName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/LoginCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/UpdateUserInfoCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/ConfigFileUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/MyBatisUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/databaseConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/AddUserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/GetUserInfoListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/GetUserInfoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/LoginTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/UpdateUserInfoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/ExtentTestNGIReporterListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/ExtentTestNGIReporterListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/AddUserCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/GetUserInfoCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/GetUserListCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/InterfaceName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/LoginCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/UpdateUserInfoCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/utils/ConfigFileUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/utils/MyBatisUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/databaseConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/mapper/SQLMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/LoginCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/LoginCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/resources/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/resources/databaseConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
+    <list default="true" id="fd86eea3-a3e2-43bd-82d6-688e0a4b011a" name="Default Changelist" comment="favorite">
       <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/databaseConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/mapper/SQLMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter13/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter13/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/userManager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/userManager.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +97,16 @@
       <workItem from="1618667968454" duration="12000" />
       <workItem from="1618669603231" duration="227000" />
       <workItem from="1625744639769" duration="1403000" />
+      <workItem from="1625746068603" duration="294000" />
     </task>
+    <task id="LOCAL-00001" summary="favorite">
+      <created>1625746131810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625746131810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +122,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="favorite" />
+    <option name="LAST_COMMIT_MESSAGE" value="favorite" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1618660386472">
