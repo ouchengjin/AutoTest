@@ -19,64 +19,81 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="https---application/json">
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/AddUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/UpdateUserInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/ExtentTestNGIReporterListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/AddUserCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserInfoCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserListCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/InterfaceName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/LoginCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/UpdateUserInfoCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/ConfigFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/MyBatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/databaseConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/config/ExtentTestNGIReporterListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/config/TestConfig.java" afterDir="false" />
+    <list default="true" id="fd86eea3-a3e2-43bd-82d6-688e0a4b011a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/userManager.log.2021-04-16" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/AddUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/AddUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/com/course/cases/GetUserInfoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/AnshiyataiInterfaceAutoTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/AddUserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/GetUserInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/cases/UpdateUserInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/ExtentTestNGIReporterListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/config/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/AddUserCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserInfoCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/GetUserListCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/InterfaceName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/LoginCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/UpdateUserInfoCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/ConfigFileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/java/com/course/utils/MyBatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/databaseConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/AddUserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/GetUserInfoListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/GetUserInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/cases/UpdateUserInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/ExtentTestNGIReporterListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/ExtentTestNGIReporterListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/config/TestConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/AddUserCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/GetUserInfoCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/GetUserListCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/InterfaceName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/LoginCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/UpdateUserInfoCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/utils/ConfigFileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/com/course/utils/MyBatisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/databaseConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/mapper/SQLMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/target/classes/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/LoginCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/java/com/course/model/LoginCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/resources/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/resources/databaseConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/databaseConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12_2/target/classes/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/target/classes/mapper/SQLMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12_2/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12_2/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/cases/LoginTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/cases/LoginTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/HttpsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/HttpsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/applicationjson/SSLClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai/util/applicationjson/SSLClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/cases/LoginTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/cases/LoginTest2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/HttpsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/HttpsUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/applicationjson/SSLClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/applicationjson/SSLClient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/applicationjson/SSLClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/httpsapplicationjson/target/classes/com/anshiyatai/util/applicationjson/SSLClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter13/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter13/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/userManager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/userManager.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ky75xmCBk7Aidtsvy2bAJqk2Wj" />
+  <component name="ProjectId" id="1rIMrdy3kOyHQBiWiIlUx527uyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -88,46 +105,16 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/httpsapplicationjson/src/main/java/com/anshiyatai" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\AnshiyataiInterfaceAutoTest\src\main\resources" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\AnshiyataiInterfaceAutoTest\src\main\java" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\httpsapplicationjson\src\main\java\com\anshiyatai" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\httpsapplicationjson\src\main\java" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\httpsapplicationjson\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.course.cases" />
-      <recent name="com.course.testng.multiThread" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\resources" />
-      <recent name="C:\Users\aaron\.ssh\workspace\muke\AutoTest\excel2javabean\src\main\java" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn dependency:copy-dependencies -DoutputDirectory=lib " />
-    </option>
-  </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTrue (1)">
+  <component name="RunManager" selected="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Chapter13" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
@@ -145,85 +132,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserInfoListTest.getUserListInfo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.GetUserInfoListTest" />
-      <option name="METHOD_NAME" value="getUserListInfo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest1.getResult" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.LoginTest1" />
-      <option name="METHOD_NAME" value="getResult" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginTrue (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.LoginTest" />
-      <option name="METHOD_NAME" value="loginTrue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginTrue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AnshiyataiInterfaceAutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.LoginTest" />
-      <option name="METHOD_NAME" value="loginTrue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.loginTrue (1)" />
-        <item itemvalue="TestNG.GetUserInfoListTest.getUserListInfo" />
-        <item itemvalue="TestNG.LoginTest.loginTrue" />
         <item itemvalue="TestNG.C:/Users/aaron/.ssh/workspace/muke/AutoTest/Chapter12_2/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.LoginTest1.getResult" />
       </list>
     </recent_temporary>
   </component>
@@ -232,273 +143,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="15628040-4cea-4477-b3f6-1f5f9edafeda" name="Default Changelist" comment="" />
-      <created>1606660797681</created>
+      <changelist id="fd86eea3-a3e2-43bd-82d6-688e0a4b011a" name="Default Changelist" comment="" />
+      <created>1618659350802</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606660797681</updated>
-      <workItem from="1606660804310" duration="1177000" />
-      <workItem from="1606741284465" duration="5905000" />
-      <workItem from="1606822650934" duration="4827000" />
-      <workItem from="1606832028581" duration="2470000" />
-      <workItem from="1606914800172" duration="8693000" />
-      <workItem from="1606994686754" duration="10471000" />
-      <workItem from="1607082303953" duration="8825000" />
-      <workItem from="1607098443257" duration="1056000" />
-      <workItem from="1607100137458" duration="978000" />
-      <workItem from="1607129498910" duration="19216000" />
-      <workItem from="1607162850248" duration="2216000" />
-      <workItem from="1607165085001" duration="1253000" />
-      <workItem from="1607175853763" duration="1111000" />
-      <workItem from="1607347894969" duration="668000" />
-      <workItem from="1607354409064" duration="669000" />
-      <workItem from="1607428006269" duration="2616000" />
-      <workItem from="1607606567837" duration="6862000" />
-      <workItem from="1607690378594" duration="6784000" />
-      <workItem from="1607699077269" duration="109000" />
-      <workItem from="1607774413607" duration="2245000" />
-      <workItem from="1607840841335" duration="14324000" />
-      <workItem from="1608032850532" duration="5307000" />
-      <workItem from="1608093032441" duration="2151000" />
-      <workItem from="1608447187836" duration="384000" />
-      <workItem from="1608447582414" duration="327000" />
-      <workItem from="1608465662623" duration="1280000" />
-      <workItem from="1608560066830" duration="2121000" />
-      <workItem from="1608638438364" duration="394000" />
-      <workItem from="1608639016989" duration="3100000" />
-      <workItem from="1608644056525" duration="1507000" />
-      <workItem from="1608821497551" duration="655000" />
-      <workItem from="1608907738757" duration="191000" />
-      <workItem from="1608908065635" duration="98000" />
-      <workItem from="1609652325722" duration="2608000" />
-      <workItem from="1610453214642" duration="1500000" />
-      <workItem from="1610805140691" duration="406000" />
-      <workItem from="1612356378967" duration="187000" />
-      <workItem from="1614604061927" duration="694000" />
-      <workItem from="1614774532030" duration="4574000" />
-      <workItem from="1614858940494" duration="1335000" />
-      <workItem from="1615294005796" duration="3330000" />
-      <workItem from="1615939023767" duration="2156000" />
-      <workItem from="1617068996046" duration="6240000" />
-      <workItem from="1617887671170" duration="2194000" />
-      <workItem from="1617891114512" duration="1605000" />
-      <workItem from="1617892935082" duration="743000" />
-      <workItem from="1617893856344" duration="416000" />
-      <workItem from="1618024289279" duration="2085000" />
-      <workItem from="1618028314410" duration="564000" />
-      <workItem from="1618149392033" duration="362000" />
-      <workItem from="1618149793394" duration="9000" />
-      <workItem from="1618492835757" duration="7291000" />
-      <workItem from="1618500145951" duration="860000" />
-      <workItem from="1618570494367" duration="12028000" />
-      <workItem from="1618584040426" duration="603000" />
-      <workItem from="1618584680082" duration="138000" />
-      <workItem from="1618584869771" duration="408000" />
+      <updated>1618659350802</updated>
+      <workItem from="1618659359768" duration="1084000" />
+      <workItem from="1618660498682" duration="241000" />
+      <workItem from="1618660758715" duration="37000" />
+      <workItem from="1618660855982" duration="275000" />
+      <workItem from="1618662360093" duration="1538000" />
+      <workItem from="1618666348141" duration="91000" />
+      <workItem from="1618667865135" duration="21000" />
+      <workItem from="1618667968454" duration="12000" />
+      <workItem from="1618669603231" duration="227000" />
+      <workItem from="1625744639769" duration="1403000" />
     </task>
-    <task id="LOCAL-00001" summary="13-2">
-      <created>1606661298743</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1606661298743</updated>
-    </task>
-    <task id="LOCAL-00002" summary="13-2结束">
-      <created>1606747044733</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1606747044733</updated>
-    </task>
-    <task id="LOCAL-00003" summary="13-3结束">
-      <created>1606835711383</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1606835711383</updated>
-    </task>
-    <task id="LOCAL-00004" summary="13-6结束">
-      <created>1606923860349</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1606923860349</updated>
-    </task>
-    <task id="LOCAL-00005" summary="13-6结束">
-      <created>1607009079477</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1607009079477</updated>
-    </task>
-    <task id="LOCAL-00006" summary="13章结束">
-      <created>1607162034401</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1607162034401</updated>
-    </task>
-    <task id="LOCAL-00007" summary="14-2">
-      <created>1607183733347</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1607183733347</updated>
-    </task>
-    <task id="LOCAL-00008" summary="14-2">
-      <created>1607428776994</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1607428776994</updated>
-    </task>
-    <task id="LOCAL-00009" summary="结束">
-      <created>1607606622358</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1607606622358</updated>
-    </task>
-    <task id="LOCAL-00010" summary="结束">
-      <created>1607608314566</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1607608314566</updated>
-    </task>
-    <task id="LOCAL-00011" summary="结束">
-      <created>1607613232209</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1607613232209</updated>
-    </task>
-    <task id="LOCAL-00012" summary="结束">
-      <created>1607694468351</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1607694468351</updated>
-    </task>
-    <task id="LOCAL-00013" summary="结束">
-      <created>1607695110478</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1607695110478</updated>
-    </task>
-    <task id="LOCAL-00014" summary="结束">
-      <created>1607696364376</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1607696364376</updated>
-    </task>
-    <task id="LOCAL-00015" summary="结束">
-      <created>1607699158075</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1607699158075</updated>
-    </task>
-    <task id="LOCAL-00016" summary="结束">
-      <created>1607784598360</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1607784598360</updated>
-    </task>
-    <task id="LOCAL-00017" summary="维护">
-      <created>1607864079496</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1607864079497</updated>
-    </task>
-    <task id="LOCAL-00018" summary="维护">
-      <created>1607864839457</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1607864839457</updated>
-    </task>
-    <task id="LOCAL-00019" summary="维护">
-      <created>1608032877331</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1608032877331</updated>
-    </task>
-    <task id="LOCAL-00020" summary="维护">
-      <created>1608043731203</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1608043731203</updated>
-    </task>
-    <task id="LOCAL-00021" summary="维护">
-      <created>1608044980159</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1608044980159</updated>
-    </task>
-    <task id="LOCAL-00022" summary="维护">
-      <created>1608099145430</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1608099145430</updated>
-    </task>
-    <task id="LOCAL-00023" summary="维护">
-      <created>1608447874457</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1608447874457</updated>
-    </task>
-    <task id="LOCAL-00024" summary="维护">
-      <created>1608477097967</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1608477097967</updated>
-    </task>
-    <task id="LOCAL-00025" summary="维护">
-      <created>1610456052390</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1610456052390</updated>
-    </task>
-    <task id="LOCAL-00026" summary="维护">
-      <created>1614780674236</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1614780674236</updated>
-    </task>
-    <task id="LOCAL-00027" summary="解析excel">
-      <created>1617893313718</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1617893313718</updated>
-    </task>
-    <task id="LOCAL-00028" summary="https---application/json">
-      <created>1618499940533</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1618499940533</updated>
-    </task>
-    <task id="LOCAL-00029" summary="https---application/json">
-      <created>1618500969983</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1618500969983</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,81 +174,47 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="13-2" />
-    <MESSAGE value="13-2结束" />
-    <MESSAGE value="13-3结束" />
-    <MESSAGE value="13-6结束" />
-    <MESSAGE value="13章结束" />
-    <MESSAGE value="14-2" />
-    <MESSAGE value="结束" />
-    <MESSAGE value="维护" />
-    <MESSAGE value="解析excel" />
-    <MESSAGE value="https---application/json" />
-    <option name="LAST_COMMIT_MESSAGE" value="https---application/json" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1618580622635">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1618660386472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1618580622635" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618496296059">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618660386472" />
+    <state width="1493" height="521" key="GridCell.Tab.0.bottom" timestamp="1618669830126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618496296059" />
-    <state width="1493" height="258" key="GridCell.Tab.0.bottom" timestamp="1618585277757">
+    <state width="1493" height="521" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618669830126" />
+    <state width="1493" height="521" key="GridCell.Tab.0.center" timestamp="1618669830126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618585277757" />
-    <state width="1493" height="258" key="GridCell.Tab.0.center" timestamp="1618585277757">
+    <state width="1493" height="521" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618669830126" />
+    <state width="1493" height="521" key="GridCell.Tab.0.left" timestamp="1618669830126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618585277757" />
-    <state width="1493" height="258" key="GridCell.Tab.0.left" timestamp="1618585277757">
+    <state width="1493" height="521" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618669830126" />
+    <state width="1493" height="521" key="GridCell.Tab.0.right" timestamp="1618669830126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618585277757" />
-    <state width="1493" height="258" key="GridCell.Tab.0.right" timestamp="1618585277757">
+    <state width="1493" height="521" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618669830126" />
+    <state width="1493" height="521" key="GridCell.Tab.1.bottom" timestamp="1618669830123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618585277757" />
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1618585277729">
+    <state width="1493" height="521" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618669830123" />
+    <state width="1493" height="521" key="GridCell.Tab.1.center" timestamp="1618669830123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618585277729" />
-    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1618585277729">
+    <state width="1493" height="521" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618669830123" />
+    <state width="1493" height="521" key="GridCell.Tab.1.left" timestamp="1618669830123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618585277729" />
-    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1618585277729">
+    <state width="1493" height="521" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618669830123" />
+    <state width="1493" height="521" key="GridCell.Tab.1.right" timestamp="1618669830123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618585277729" />
-    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1618585277729">
+    <state width="1493" height="521" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618669830123" />
+    <state x="178" y="73" key="new project wizard" timestamp="1618666435439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618585277729" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1618497259771">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1618497259771" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618500987473">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618500987473" />
-    <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1618493670944">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="565" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1618493670944" />
-    <state x="190" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618494335632">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="190" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1618494335632" />
-    <state x="90" y="46" key="new project wizard" timestamp="1618580477253">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="90" y="46" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1618580477253" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1618666435439" />
   </component>
 </project>

@@ -5,10 +5,8 @@
 <mapper namespace="SQLMapper">
 
     <!--获取登陆接口case-->
-    <select id="loginCase" parameterType="Integer"  resultType="loginCase">
-
-        select * from loginCase
-        where id = #{id}
+    <select id="loginCase" parameterType="Integer" resultType="loginCase">
+        select * from logincase where id=#{id}
     </select>
     <!--添加用户接口case-->
     <select id="addUserCase" parameterType="Integer" resultType="addUserCase">

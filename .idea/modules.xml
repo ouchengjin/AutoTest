@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/AnshiyataiInterfaceAutoTest.iml" filepath="$PROJECT_DIR$/AnshiyataiInterfaceAutoTest/AnshiyataiInterfaceAutoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter.iml" filepath="$PROJECT_DIR$/Chapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter10/Chapter10.iml" filepath="$PROJECT_DIR$/Chapter10/Chapter10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter11/Chapter11.iml" filepath="$PROJECT_DIR$/Chapter11/Chapter11.iml" />
